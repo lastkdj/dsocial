@@ -2,7 +2,15 @@
 
 .banner_container {
   height: 850px;
+  background-image: url("../../public/hands.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (max-width: $mdBreakpoint) {
+  .banner_container {
+    background-size: cover;
+    background-position: bottom;
+  }
 }

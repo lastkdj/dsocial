@@ -13,5 +13,11 @@ $minLaptop: 1280px;
   transition: 0.5s;
 }
 
+.logo {
+  animation-duration: 1.3s;
+  animation-name: fadeInTop;
+  transition: 0.5s;
+}
+
 @media (max-width: $mdBreakpoint) {
 }

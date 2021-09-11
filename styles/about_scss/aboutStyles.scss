@@ -1,7 +1,9 @@
+@import "_about_tittle.scss", "_about_grid.scss";
+
 $fontColor: #0c2335;
 
 .about_container {
-  background: #0c2335;
+  height: 50vh;
 }
 
 // @media (max-width: $mdBreakpoint) {

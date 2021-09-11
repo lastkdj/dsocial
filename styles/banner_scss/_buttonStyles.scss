@@ -31,7 +31,7 @@ $minLaptop: 1280px;
   width: 100%;
   text-transform: none;
   border: 1px solid #1f232c;
-  transition: 0.5s;
+  transition: 0.3s;
   text-transform: uppercase;
 }
 
@@ -39,6 +39,7 @@ $minLaptop: 1280px;
   background-color: #dbb312;
   color: #ffffff;
   border: 1px solid #4d309c;
+  transform: scale(1.1);
 }
 
 .bio_buttons_container {

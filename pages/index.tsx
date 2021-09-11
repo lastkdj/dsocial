@@ -22,7 +22,7 @@ const Home: NextPage = () => {
   return (
     <ThemeProvider theme={theme}>
       <StylesProvider injectFirst={true}>
-        <div className="header_banner">
+        <div>
           <Header />
           <Banner />
           <About />

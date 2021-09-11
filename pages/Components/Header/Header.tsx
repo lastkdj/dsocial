@@ -51,7 +51,23 @@ const Header: React.FC<Props> = () => {
         alignItems="center"
         className="header_logo"
       >
-        <Image src="/logo.png" alt="" width="180px" height="60px" />
+        {scrolled ? (
+          <Image
+            src="/logo.png"
+            alt=""
+            className="logo"
+            width="100px"
+            height="30px"
+          />
+        ) : (
+          <Image
+            src="/logo.png"
+            alt=""
+            className="logo"
+            width="180px"
+            height="60px"
+          />
+        )}
       </Grid>
       {/* </Link> */}
       {isTabletOrMobile ? (
