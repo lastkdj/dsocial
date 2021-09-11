@@ -1,0 +1,17 @@
+$xsBreakpoint: 375px;
+$smBreakpoint: 600px;
+$mdBreakpoint: 959px;
+$lgBreakpoint: 1279px;
+$xlBreakpoint: 1919px;
+
+$minTablet: 960px;
+$minLaptop: 1280px;
+
+.header_logo {
+  animation-duration: 1.3s;
+  animation-name: fadeInTop;
+  transition: 0.5s;
+}
+
+@media (max-width: $mdBreakpoint) {
+}

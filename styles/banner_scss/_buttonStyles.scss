@@ -1,0 +1,97 @@
+$xsBreakpoint: 414px;
+$smBreakpoint: 600px;
+$mdBreakpoint: 959px;
+$lgBreakpoint: 1279px;
+$xlBreakpoint: 1919px;
+$minTablet: 960px;
+$minLaptop: 1280px;
+
+.bio_button {
+  border-radius: 30px;
+  padding: 13px;
+  background-color: #1f232c;
+  color: white;
+  text-transform: none;
+  width: 100%;
+  border: 1px solid #1f232c;
+  transition: 0.5s;
+}
+
+.bio_button:hover {
+  background-color: white;
+  color: #1f232c;
+  border: 1px solid #1f232c;
+}
+
+.dona_button_banner {
+  border-radius: 30px;
+  padding: 10px;
+  background-color: #dbb312;
+  color: white;
+  width: 100%;
+  text-transform: none;
+  border: 1px solid #1f232c;
+  transition: 0.5s;
+  text-transform: uppercase;
+}
+
+.dona_button_banner:hover {
+  background-color: #dbb312;
+  color: #ffffff;
+  border: 1px solid #4d309c;
+}
+
+.bio_buttons_container {
+  margin: 10px 10px;
+}
+
+.bio_buttons {
+  margin: 0px 20px;
+}
+
+.bio_buttons_banner {
+  margin: 0px 10px;
+}
+
+@media (max-width: $mdBreakpoint) {
+  .bio_buttons_container {
+    margin: 10px 0px;
+    justify-content: center;
+  }
+
+  .bio_button {
+    padding: 12px;
+    font-size: 0.7em;
+  }
+
+  .dona_button_banner {
+    font-size: 0.7em;
+  }
+}
+
+@media (min-width: $minTablet) and (max-width: $lgBreakpoint) {
+  .bio_buttons_container {
+    margin: 10px 0px;
+    justify-content: center;
+  }
+
+  .bio_button {
+    padding: 12px;
+    font-size: 0.7em;
+  }
+
+  .bio_buttons {
+    margin: 0px 10px;
+  }
+}
+
+@media (min-width: $minLaptop) and (max-width: $xlBreakpoint) {
+  .bio_buttons_container {
+    margin: 10px 0px;
+  }
+
+  .bio_button {
+    padding: 12px;
+    font-size: 0.8em;
+  }
+}

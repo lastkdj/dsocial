@@ -1,0 +1,44 @@
+$xsBreakpoint: 375px;
+$smBreakpoint: 600px;
+$mdBreakpoint: 959px;
+$lgBreakpoint: 1279px;
+$xlBreakpoint: 1920px;
+
+@mixin fadeInRightAnimation {
+  animation-duration: 2s;
+  animation-name: fadeInLeft;
+  transition: 0.5s;
+}
+
+.avatar_container {
+  @include fadeInRightAnimation;
+}
+
+.avatar_size {
+  width: 500px;
+  height: 880px;
+}
+
+@media (max-width: $lgBreakpoint) {
+  .avatar_container {
+    display: none;
+  }
+}
+
+@media (min-width: $mdBreakpoint) and (max-width: $xlBreakpoint) {
+  .avatar_size {
+    width: 400px;
+    height: 680px;
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+  }
+}

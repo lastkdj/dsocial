@@ -1,0 +1,37 @@
+$xsBreakpoint: 375px;
+$smBreakpoint: 600px;
+$mdBreakpoint: 959px;
+$lgBreakpoint: 1280px;
+$xlBreakpoint: 1920px;
+
+.container {
+  position: fixed;
+  top: 0;
+  height: 66px;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.sticky {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 10px;
+  top: 0;
+  position: fixed;
+  background-color: #f2f2f2;
+  z-index: 2;
+  transition: all 0.3s ease-in-out;
+  box-shadow: -1px 10px 5px -4px rgba(0, 0, 0, 0.07);
+  border-bottom: 2px #3b3f49 solid;
+}
+
+@media (max-width: $mdBreakpoint) {
+  .container {
+    justify-content: space-around;
+  }
+
+  .sticky {
+    justify-content: space-around;
+  }
+}

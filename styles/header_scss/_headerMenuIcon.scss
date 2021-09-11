@@ -1,0 +1,19 @@
+$yellow: #f1c40f;
+
+.header_menuicon {
+  font-size: 2em;
+  color: 0c2335;
+}
+
+.header_menuicon_text {
+  color: black;
+}
+
+.fourth {
+  border-radius: 10px;
+  background-color: #f1c40f;
+
+  &:hover {
+    filter: brightness(1.5);
+  }
+}
