@@ -2,7 +2,6 @@ import React from "react";
 import { Grid, Typography } from "@material-ui/core";
 import Dona from "./Dona";
 import Voluntario from "./Voluntario";
-import Image from "next/image";
 
 export interface Props {}
 
@@ -32,11 +31,10 @@ const Banner: React.FC<Props> = () => {
           </Typography>
           <Typography className="bio_description">
             Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s,
+            industry. Lorem Ipsum has been the industrys standard dummy text
+            ever since the 1500s
           </Typography>
         </Grid>
-
         <Grid container item className="bio_buttons_container">
           <Grid
             item
