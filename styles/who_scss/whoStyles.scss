@@ -1,0 +1,70 @@
+@import "_whoText.scss", "_whoImages.scss";
+
+.who_container {
+  padding: 50px;
+  background-color: #f2f2f2;
+  overflow: hidden;
+}
+
+.who_grid_container {
+  padding: 10px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.who_grid_container_right {
+  padding: 10px;
+  align-items: center;
+  order: 3;
+}
+
+.who_tittle_container {
+  margin: 20px 0px 50px 0px;
+}
+
+.fadeInRight {
+  animation-duration: 1.3s;
+  animation-name: fadeInRight;
+}
+
+.fadeInLeft {
+  animation-duration: 1.3s;
+  animation-name: fadeInLeft;
+}
+
+@media (max-width: 959px) {
+  .who_container {
+    padding: 10px;
+  }
+
+  .who_grid_container_right {
+    order: 2;
+    justify-content: center;
+  }
+
+  .who_grid_container {
+    justify-content: center;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+  }
+}

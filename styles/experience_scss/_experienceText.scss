@@ -1,0 +1,40 @@
+$fontColor: #0c2335;
+
+.exp_text {
+  font-size: 0.9em;
+  color: #0c2335;
+  font-weight: 300;
+  text-align: justify;
+  font-family: "Montserrat", sans-serif;
+  margin: 10px 0px;
+}
+
+.exp_tittle {
+  font-size: 2em;
+  font-weight: 600;
+  color: $fontColor;
+  font-family: "Montserrat", sans-serif;
+  margin: 10px 0px;
+}
+
+.exp_tittle_two {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: $fontColor;
+  font-family: "Montserrat", sans-serif;
+  margin: 10px 0px;
+}
+
+@media (max-width: 1366px) {
+  .exp_tittle {
+    font-size: 1.5em;
+  }
+
+  .exp_tittle_two {
+    font-size: 1.2em;
+  }
+
+  .exp_text {
+    font-size: 0.8em;
+  }
+}

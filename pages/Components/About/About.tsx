@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Grid, Typography } from "@material-ui/core";
+import Image from "next/image";
 
 const About = () => {
   useEffect(() => {
@@ -42,7 +43,16 @@ const About = () => {
       className="about_container"
       id="about"
     >
-      <Grid container item xs={12} md={6} className="about_grid_picture"></Grid>
+      <Grid container item xs={12} md={6} className="about_grid_picture">
+        {/* <Image
+          src="/about2.jpg"
+          alt=""
+          className="logo"
+          width={700}
+          height={431}
+          layout="fill"
+        /> */}
+      </Grid>
 
       <Grid container item xs={12} md={6} className="about_grid_flat">
         {" "}

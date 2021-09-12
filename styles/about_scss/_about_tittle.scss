@@ -1,3 +1,9 @@
+$xsBreakpoint: 414px;
+$smBreakpoint: 600px;
+$mdBreakpoint: 959px;
+$lgBreakpoint: 1280px;
+$xlBreakpoint: 1919px;
+
 @mixin aboutMargins {
   margin: 5px 0px;
 }
@@ -46,6 +52,29 @@
   color: #dbb312;
   @include aboutMargins();
 }
+
+@media (min-width: $mdBreakpoint) and (max-width: 1366px) {
+  .about_span {
+    font-size: 0.8em;
+  }
+
+  .about_tittle {
+    font-size: 1.5em;
+  }
+
+  .about_span_befeore {
+    position: absolute;
+    top: 50%;
+    left: -170%;
+    width: 60px;
+  }
+
+  .about_span_after {
+    left: 120%;
+    width: 60px;
+  }
+}
+
 @media (max-width: $mdBreakpoint) {
   .about_span {
     font-size: 0.8em;

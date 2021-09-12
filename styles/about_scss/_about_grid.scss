@@ -15,8 +15,9 @@ $minLaptop: 1280px;
 }
 
 .about_grid_picture {
-  background-image: url("../../public/about.jpg");
+  background-image: url("../../public/about2.jpg");
   background-size: cover;
+  background-position: center;
 }
 
 // Observer
@@ -82,14 +83,17 @@ $minLaptop: 1280px;
 
 .about_grid_container {
   transition: opacity 0.7s ease-in;
+  transition-delay: 0.1s;
 }
 
 .about_grid_container_two {
-  transition: opacity 0.9s ease-in;
+  transition: opacity 0.7s ease-in;
+  transition-delay: 0.3s;
 }
 
 .about_grid_container_three {
-  transition: opacity 1s ease-in;
+  transition: opacity 0.7s ease-in;
+  transition-delay: 0.5s;
 }
 
 .programming_yeartext {
@@ -110,6 +114,10 @@ $minLaptop: 1280px;
 
   .centered_text {
     left: 38%;
+  }
+
+  .about_grid_picture {
+    height: 300px;
   }
 }
 

@@ -2,6 +2,9 @@ import type { NextPage } from "next";
 import Header from "./Components/Header/Header";
 import Banner from "./Components/Banner/Banner";
 import About from "./Components/About/About";
+import Who from "./Components/Who/Who";
+import Experience from "./Components/Experience/Experience";
+
 import { StylesProvider } from "@material-ui/core/styles";
 import { createTheme } from "@material-ui/core/styles";
 import { ThemeProvider } from "@material-ui/styles";
@@ -26,6 +29,8 @@ const Home: NextPage = () => {
           <Header />
           <Banner />
           <About />
+          <Who />
+          <Experience />
         </div>
       </StylesProvider>
     </ThemeProvider>

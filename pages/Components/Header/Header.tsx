@@ -56,7 +56,7 @@ const Header: React.FC<Props> = () => {
             src="/logo.png"
             alt=""
             className="logo"
-            width="100px"
+            width="80px"
             height="30px"
           />
         ) : (

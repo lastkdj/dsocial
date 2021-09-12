@@ -1,0 +1,83 @@
+@import "_experienceText", "_experienceImages";
+
+.big_exp_container {
+  background-image: url(../../public/back2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.exp_container {
+  padding: 100px 50px 50px 50px;
+  justify-content: center;
+}
+
+.exp_left_container {
+  align-items: center;
+  margin: 150px 0px 100px 250px;
+}
+
+.exp_left_container_two {
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+}
+
+.exp_right_container {
+  align-items: center;
+  margin: 0px 0px;
+}
+
+.exp_right_container_two {
+  align-items: center;
+}
+
+.exp_second_secction {
+  background-image: url(../../public/puppets2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 1366px) {
+  .exp_container {
+    padding-top: 50px;
+  }
+
+  .exp_left_container {
+    align-items: center;
+    margin: 150px 0px 100px 80px;
+  }
+}
+
+@media (max-width: 960px) {
+  .exp_left_container {
+    margin: 120px 0px 100px 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .exp_container {
+    padding: 10px;
+  }
+
+  .exp_left_container {
+    margin: 0px;
+    padding: 30px 20px 20px 20px;
+  }
+
+  .exp_right_container_two {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 414px) {
+  .exp_container {
+    padding: 10px;
+  }
+
+  .exp_left_container {
+    margin: 0px;
+    padding: 30px 20px 20px 20px;
+  }
+}
