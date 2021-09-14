@@ -62,7 +62,7 @@ const Who = () => {
   }, []);
 
   return (
-    <Grid container className="who_container">
+    <Grid container className="who_container" id="who">
       <Grid
         container
         justifyContent="center"

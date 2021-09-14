@@ -4,7 +4,9 @@ import Banner from "./Components/Banner/Banner";
 import About from "./Components/About/About";
 import Who from "./Components/Who/Who";
 import Experience from "./Components/Experience/Experience";
-
+import Finance from "./Components/Finance/Finance";
+import FinanceLogos from "./Components/Finance/FinanceLogos";
+import Proyectos from "./Components/Proyectos/Proyectos";
 import { StylesProvider } from "@material-ui/core/styles";
 import { createTheme } from "@material-ui/core/styles";
 import { ThemeProvider } from "@material-ui/styles";
@@ -31,6 +33,9 @@ const Home: NextPage = () => {
           <About />
           <Who />
           <Experience />
+          <Finance />
+          <FinanceLogos />
+          <Proyectos />
         </div>
       </StylesProvider>
     </ThemeProvider>

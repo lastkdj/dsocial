@@ -1,0 +1,61 @@
+$fontColorWhite: #ffffff;
+
+.fin_text {
+  font-size: 0.9em;
+  color: $fontColorWhite;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+  margin: 10px 0px;
+}
+
+.fin_tittle {
+  font-size: 2em;
+  font-weight: 600;
+  color: $fontColorWhite;
+  font-family: "Montserrat", sans-serif;
+}
+
+.fin_tittle_two {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: $fontColorWhite;
+  font-family: "Montserrat", sans-serif;
+  margin: 10px 0px;
+}
+
+.fin_tittle_span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  color: #dbb312;
+  @include aboutMargins();
+}
+
+@media (max-width: 1366px) {
+  .fin_tittle {
+    font-size: 1.5em;
+  }
+
+  .fin_tittle_two {
+    font-size: 1.2em;
+  }
+
+  .fin_text {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 600px) {
+  .fin_tittle {
+    font-size: 1.5em;
+  }
+
+  .fin_tittle_two {
+    font-size: 1.2em;
+  }
+
+  .fin_text {
+    font-size: 0.8em;
+    text-align: justify;
+  }
+}

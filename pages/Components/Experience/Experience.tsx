@@ -65,7 +65,7 @@ const Experience = () => {
   }, []);
 
   return (
-    <Grid container className="big_exp_container">
+    <Grid container className="big_exp_container" id="exp">
       <Grid container className="exp_container">
         <Grid
           item
@@ -75,7 +75,7 @@ const Experience = () => {
           xl={4}
           className="exp_left_container fadeOut"
         >
-          <Grid container item xs={12}>
+          <Grid container item xs={12} id="exp">
             <Typography className="exp_tittle">
               <span className="about_tittle_span">EXPERIENCIA</span> DS&H
             </Typography>

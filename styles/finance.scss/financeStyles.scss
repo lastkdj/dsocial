@@ -1,0 +1,58 @@
+@import "_financeText", "_financeImage";
+
+.big_fin_container {
+  background-image: url(../../public/columbia2.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 50px;
+}
+
+.fin_second_container {
+  padding: 50px;
+}
+
+.fin_right_container {
+  justify-content: center;
+  align-items: center;
+  margin: 80px;
+}
+
+.fin_container_right {
+  order: 1;
+}
+
+.fin_container_left {
+  order: 0;
+}
+
+.sponsor {
+  margin: 0px 10px;
+}
+
+@media (max-width: 1366px) {
+  .fin_right_container {
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .big_fin_container {
+    padding: 30px;
+  }
+
+  .fin_container_right {
+    order: 0;
+  }
+
+  .fin_container_left {
+    order: 1;
+  }
+
+  .sponsor {
+    margin: 0px;
+  }
+}

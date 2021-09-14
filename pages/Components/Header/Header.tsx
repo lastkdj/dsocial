@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Grid, Typography } from "@material-ui/core";
-import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
+import { Link } from "react-scroll";
 import Button from "./Button";
 import { useMediaQuery } from "react-responsive";
 // import { Link } from "react-scroll";
@@ -35,14 +35,6 @@ const Header: React.FC<Props> = () => {
       justifyContent="center"
       className={scrolled ? "sticky" : "container"}
     >
-      {/* <Link
-        activeClass="active"
-        to="home"
-        spy={true}
-        smooth={true}
-        offset={-66}
-        duration={1000}
-      > */}
       <Grid
         container
         item
@@ -51,25 +43,34 @@ const Header: React.FC<Props> = () => {
         alignItems="center"
         className="header_logo"
       >
-        {scrolled ? (
-          <Image
-            src="/logo.png"
-            alt=""
-            className="logo"
-            width="80px"
-            height="30px"
-          />
-        ) : (
-          <Image
-            src="/logo.png"
-            alt=""
-            className="logo"
-            width="180px"
-            height="60px"
-          />
-        )}
+        <Link
+          activeClass="active"
+          to="home"
+          spy={true}
+          smooth={true}
+          offset={-66}
+          duration={1000}
+        >
+          {scrolled ? (
+            <Image
+              src="/logo.png"
+              alt=""
+              className="logo"
+              width="120px"
+              height="40px"
+            />
+          ) : (
+            <Image
+              src="/logo.png"
+              alt=""
+              className="logo"
+              width="180px"
+              height="60px"
+            />
+          )}{" "}
+        </Link>
       </Grid>
-      {/* </Link> */}
+
       {isTabletOrMobile ? (
         <Grid container item xs={6} sm={6} md={6} className="header_menu">
           <Menu />
@@ -85,9 +86,38 @@ const Header: React.FC<Props> = () => {
           justifyContent="center"
           className="header_menu"
         >
-          <Typography className="header_menu_text">¿QUE HACEMOS?</Typography>{" "}
-          <Typography className="header_menu_text">¿QUIENES SOMOS?</Typography>
-          <Typography className="header_menu_text">ALIANZAS</Typography>{" "}
+          <Link
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-66}
+            duration={1000}
+          >
+            <Typography className="header_menu_text">¿QUE HACEMOS?</Typography>{" "}
+          </Link>{" "}
+          <Link
+            activeClass="active"
+            to="who"
+            spy={true}
+            smooth={true}
+            offset={-60}
+            duration={1000}
+          >
+            <Typography className="header_menu_text">
+              ¿QUIENES SOMOS?
+            </Typography>{" "}
+          </Link>{" "}
+          <Link
+            activeClass="active"
+            to="exp"
+            spy={true}
+            smooth={true}
+            offset={80}
+            duration={1000}
+          >
+            <Typography className="header_menu_text">EXPERIENCIA</Typography>{" "}
+          </Link>
           <Typography className="header_menu_text">CONTACTO</Typography>
           <Button />
         </Grid>
