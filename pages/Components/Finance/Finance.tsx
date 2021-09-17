@@ -7,6 +7,60 @@ const Finance = () => {
   const isLaptop = useMediaQuery({ query: "(max-width: 1366px)" });
   const isTablet = useMediaQuery({ query: "(max-width: 960px)" });
 
+  useEffect(() => {
+    const observerOptions = {
+      root: null,
+      threshold: 0.7,
+    };
+
+    const observerCallback = (entries: any, observer: any) => {
+      entries.forEach((entry: any) => {
+        if (entry.isIntersecting) {
+          // fade in observed elements that are in view
+          entry.target.classList.replace("fadeOut", "fadeInLeft");
+        } else {
+          // fade out observed elements that are not in view
+          return;
+        }
+      });
+    };
+
+    const fadeElms = document.querySelectorAll(".fin_container_right");
+
+    const observer = new IntersectionObserver(
+      observerCallback,
+      observerOptions
+    );
+    fadeElms.forEach((el) => observer.observe(el));
+  }, []);
+
+  useEffect(() => {
+    const observerOptions = {
+      root: null,
+      threshold: 0.7,
+    };
+
+    const observerCallback = (entries: any, observer: any) => {
+      entries.forEach((entry: any) => {
+        if (entry.isIntersecting) {
+          // fade in observed elements that are in view
+          entry.target.classList.replace("fadeOut", "fadeIn");
+        } else {
+          // fade out observed elements that are not in view
+          return;
+        }
+      });
+    };
+
+    const fadeElms = document.querySelectorAll(".fin_container_left");
+
+    const observer = new IntersectionObserver(
+      observerCallback,
+      observerOptions
+    );
+    fadeElms.forEach((el) => observer.observe(el));
+  }, []);
+
   return (
     <Grid container className="big_fin_container" id="finance">
       <Grid
@@ -16,7 +70,7 @@ const Finance = () => {
         md={6}
         justifyContent="center"
         alignItems="center"
-        className="fin_container_left"
+        className="fin_container_left fadeOut"
       >
         <Grid
           item
@@ -33,7 +87,13 @@ const Finance = () => {
           />
         </Grid>
       </Grid>
-      <Grid container item sm={12} md={6} className="fin_container_right">
+      <Grid
+        container
+        item
+        sm={12}
+        md={6}
+        className="fin_container_right fadeOut"
+      >
         <Grid
           item
           container

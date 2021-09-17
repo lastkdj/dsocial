@@ -1,5 +1,15 @@
 @import "_financeText", "_financeImage";
 
+.fadeOutlittle {
+  opacity: 0;
+  transform: scale(0.5);
+}
+
+.fadeInbig {
+  opacity: 1;
+  transform: scale(1);
+}
+
 .big_fin_container {
   background-image: url(../../public/columbia2.jpg);
   background-position: top;
@@ -11,6 +21,9 @@
 
 .fin_second_container {
   padding: 50px;
+  animation-duration: 1s;
+  animation-name: fadeIn;
+  transition: 1s;
 }
 
 .fin_right_container {
@@ -25,6 +38,9 @@
 
 .fin_container_left {
   order: 0;
+  animation-duration: 1s;
+  animation-name: fadeIn;
+  transition: 1s;
 }
 
 .sponsor {
@@ -54,5 +70,14 @@
 
   .sponsor {
     margin: 0px;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
