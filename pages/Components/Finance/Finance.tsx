@@ -1,11 +1,28 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Grid, Typography } from "@material-ui/core";
 import Image from "next/image";
 import { useMediaQuery } from "react-responsive";
+import Dialog from "@mui/material/Dialog";
+
+export interface SimpleDialogProps {
+  open: boolean;
+  selectedValue: string;
+  onClose: (value: string) => void;
+}
 
 const Finance = () => {
   const isLaptop = useMediaQuery({ query: "(max-width: 1366px)" });
   const isTablet = useMediaQuery({ query: "(max-width: 960px)" });
+
+  const [open, setOpen] = React.useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = (value: string) => {
+    setOpen(false);
+  };
 
   useEffect(() => {
     const observerOptions = {
@@ -63,6 +80,9 @@ const Finance = () => {
 
   return (
     <Grid container className="big_fin_container" id="finance">
+      <Dialog onClose={handleClose} open={open}>
+        <Image src="/articulos.jpg" alt="" width={900} height={600} />
+      </Dialog>
       <Grid
         container
         item
@@ -149,6 +169,15 @@ const Finance = () => {
                 violencia contra niños y adolescentes en Ecuador.
               </span>
             </Typography>
+            <Grid container item xs={12} justifyContent="flex-end">
+              <Typography
+                className="articulos"
+                style={{ textAlign: "end", cursor: "pointer" }}
+                onClick={handleClickOpen}
+              >
+                Articulos DS&H en el mundo
+              </Typography>
+            </Grid>
           </Grid>
         </Grid>
       </Grid>

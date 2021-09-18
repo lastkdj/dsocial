@@ -1,0 +1,110 @@
+@import "_proyectosText";
+
+.proyectos_container {
+  background-color: #f2f2f2;
+  padding: 50px;
+  overflow: hidden;
+}
+
+.proy_job {
+  padding: 40px 20px;
+  margin: 20px 20px;
+  background-color: white;
+  box-shadow: 10px 10px 34px 1px rgba(0, 0, 0, 0.07);
+  transition: ease-in-out 0.2s;
+}
+
+.proy_job_grids {
+  animation-duration: 1.3s;
+  animation-name: fadeInBot;
+  transition: 0.5s;
+}
+
+.map_container {
+  box-shadow: 10px 10px 34px 1px rgba(0, 0, 0, 0.07);
+  transition: ease-in-out 0.3s;
+}
+
+.map_container:hover {
+  transform: scale(1.2);
+}
+
+.proy_job:hover {
+  background-color: #dbb312;
+}
+
+.proy_job_two {
+  padding: 40px 20px 80px 20px;
+  margin: 20px 20px;
+  background-color: white;
+  box-shadow: 10px 10px 34px 1px rgba(0, 0, 0, 0.07);
+}
+
+.icon_back {
+  padding: 10px;
+  background-color: #dbb312;
+  height: 70px;
+}
+
+.proy_job:hover .icon_back {
+  background-color: white;
+}
+
+.proy_job:hover .icon {
+  color: #dbb312;
+}
+
+.proy_job:hover .proy_country {
+  color: white;
+}
+
+.proy_job:hover .proy_text_tittle {
+  color: white;
+}
+
+.proy_job:hover .proy_text {
+  color: white;
+}
+
+.icon {
+  font-size: 2em;
+  color: white;
+}
+
+.translate {
+  transform: translateZ(0);
+  transition: 0.5s;
+}
+
+.proy_job:hover .translate {
+  transform: translate(0px, -20px);
+}
+
+.map_grid {
+  margin: 0px 20px;
+}
+
+.map_grid_two {
+  padding: 20px;
+}
+
+.proy_tittle_text {
+  animation-duration: 1s;
+  animation-name: fadeInBot;
+  transition: 1s;
+}
+
+@media (max-width: 600px) {
+  .proyectos_container {
+    padding: 30px;
+  }
+
+  .proy_job {
+    padding: 40px 20px;
+    margin: 10px 0px;
+  }
+
+  .map_grid {
+    margin-top: 10px;
+  }
+}

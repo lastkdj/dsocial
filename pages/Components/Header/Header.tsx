@@ -12,7 +12,7 @@ export interface Props {}
 
 const Header: React.FC<Props> = () => {
   const [scrolled, setScrolled] = useState<boolean>(false);
-  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 959px)" });
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 960px)" });
   useEffect(() => {
     window.addEventListener("scroll", () => {
       const isTop: boolean = window.scrollY < 76;

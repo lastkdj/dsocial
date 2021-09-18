@@ -3,7 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Manuale:wght@400;500;600;700&display=swap");
 @import "./header_scss/headerStyles.scss", "./banner_scss/bannerSytles.scss",
   "./about_scss/aboutStyles.scss", "./who_scss/whoStyles.scss",
-  "./experience_scss/experienceStyles.scss", "./finance.scss/financeStyles.scss";
+  "./experience_scss/experienceStyles.scss", "./finance.scss/financeStyles.scss",
+  "./proyectos_scss/proyectosStyles.scss";
 
 $mdBreakpoint: 959px;
 $xsBreakpoint: 375px;
@@ -46,3 +47,14 @@ a {
 //     background-position-y: -100px;
 //   }
 // }
+
+@keyframes fadeInBot {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(0px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(-20px);
+  }
+}
