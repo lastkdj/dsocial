@@ -1,0 +1,76 @@
+@import "./contactText";
+
+.contact_container {
+  background-color: #0c2335;
+  padding: 50px;
+}
+
+.form_button {
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.form_input {
+  border-radius: 5px;
+  width: inherit;
+  padding: 10px;
+}
+
+.form_input_description {
+  border-radius: 5px;
+  width: inherit;
+  padding: 10px;
+  height: 140px;
+}
+
+.form_button_banner {
+  border-radius: 30px;
+  padding: 10px 10px;
+  background-color: #dbb312;
+  color: white;
+  width: 20%;
+  text-transform: none;
+  border: 1px solid #1f232c;
+  transition: 0.2s;
+  text-transform: uppercase;
+}
+
+.form_button_banner:hover {
+  background-color: #dbb312;
+  color: #ffffff;
+  border: 1px solid #4d309c;
+  transform: scale(1.1);
+}
+
+.snackbar {
+  background-color: rgb(46, 125, 50);
+  border-radius: 7px;
+}
+
+.css-1eqdgzv-MuiPaper-root-MuiSnackbarContent-root {
+  background-color: rgb(46, 125, 50);
+}
+
+.form_input_grid {
+  margin: 10px;
+  padding: 10px;
+}
+
+@media (max-width: 960px) {
+  .contact_container {
+    padding: 30px;
+  }
+
+  .form_input_grid {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .form_button_banner {
+    width: 50%;
+  }
+
+  .email_contact {
+    justify-content: center;
+  }
+}

@@ -64,6 +64,34 @@ const Proyectos = () => {
     fadeElmsThree.forEach((el) => observer.observe(el));
   }, []);
 
+  useEffect(() => {
+    const observerOptions = {
+      root: null,
+      threshold: 0.7,
+    };
+
+    const observerCallback = (entries: any, observer: any) => {
+      entries.forEach((entry: any) => {
+        if (entry.isIntersecting) {
+          // fade in observed elements that are in view
+          entry.target.classList.replace("fadeOut", "fadeInBot");
+        } else {
+          // fade out observed elements that are not in view
+          return;
+        }
+      });
+    };
+
+    const fadeElmsThree = document.querySelectorAll(".map_grid");
+
+    const observer = new IntersectionObserver(
+      observerCallback,
+      observerOptions
+    );
+
+    fadeElmsThree.forEach((el) => observer.observe(el));
+  }, []);
+
   return (
     <Grid
       container
@@ -201,7 +229,7 @@ const Proyectos = () => {
         lg={12}
         xl={12}
         justifyContent="center"
-        className="map_grid"
+        className="map_grid fadeOut"
       >
         <Image
           src="/mapa.jpg"

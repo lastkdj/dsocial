@@ -3,7 +3,6 @@ import { Grid, Typography } from "@material-ui/core";
 import { Link } from "react-scroll";
 import Button from "./Button";
 import { useMediaQuery } from "react-responsive";
-// import { Link } from "react-scroll";
 import Image from "next/image";
 
 import Menu from "./Menu";
@@ -118,7 +117,16 @@ const Header: React.FC<Props> = () => {
           >
             <Typography className="header_menu_text">EXPERIENCIA</Typography>{" "}
           </Link>
-          <Typography className="header_menu_text">CONTACTO</Typography>
+          <Link
+            activeClass="active"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={80}
+            duration={1000}
+          >
+            <Typography className="header_menu_text">CONTACTO</Typography>
+          </Link>
           <Button />
         </Grid>
       )}
