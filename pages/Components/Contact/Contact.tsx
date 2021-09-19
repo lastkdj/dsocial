@@ -4,7 +4,7 @@ import { useMediaQuery } from "react-responsive";
 import Button from "@mui/material/Button";
 import emailjs from "emailjs-com";
 import Snackbar from "@mui/material/Snackbar";
-import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
+import PositionedSnackbar from "./PositionedSnackbar";
 
 const Proyectos = () => {
   const isLaptop = useMediaQuery({ query: "(max-width: 1366px)" });
@@ -184,38 +184,7 @@ const Proyectos = () => {
         onClose={handleClose}
         message="Enviado!"
         anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
-        children={
-          <Grid
-            container
-            style={{
-              width: "150px",
-              padding: "10px",
-              color: "white",
-              backgroundColor: "rgb(48 146 53)",
-              borderRadius: "3px",
-            }}
-          >
-            <Grid
-              container
-              alignItems="center"
-              justifyContent="center"
-              item
-              xs={8}
-            >
-              {" "}
-              Enviado!{" "}
-            </Grid>
-            <Grid
-              container
-              alignItems="center"
-              justifyContent="center"
-              item
-              xs={4}
-            >
-              <CheckCircleOutlineIcon />{" "}
-            </Grid>
-          </Grid>
-        }
+        children={<PositionedSnackbar />}
       />
     </Grid>
   );
