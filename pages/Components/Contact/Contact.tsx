@@ -1,15 +1,17 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Grid, Typography } from "@material-ui/core";
 import { useMediaQuery } from "react-responsive";
 import Button from "@mui/material/Button";
 import emailjs from "emailjs-com";
 import Snackbar from "@mui/material/Snackbar";
-import PositionedSnackbar from "./PositionedSnackbar";
+import "react-phone-number-input/style.css";
+import PhoneInput from "react-phone-number-input";
 
 const Proyectos = () => {
   const isLaptop = useMediaQuery({ query: "(max-width: 1366px)" });
 
   const [open, setOpen] = React.useState(false);
+  const [value, setValue] = useState<any>();
 
   const sendEmail = (e: any) => {
     e.preventDefault();
@@ -24,6 +26,7 @@ const Proyectos = () => {
       .then(
         (result) => {
           console.log(result.text);
+          console.log(value);
         },
         (error) => {
           console.log(error.text);
@@ -106,7 +109,13 @@ const Proyectos = () => {
               style={{ marginBottom: "10px" }}
             >
               <Typography className="contact_text_tittle">Telefono</Typography>
-              <input className="form_input" name="from_number" required />
+              <PhoneInput
+                style={{ width: "100%" }}
+                placeholder="Enter phone number"
+                value={value}
+                onChange={setValue}
+                name="from_number"
+              />
             </Grid>
             <Grid
               item
