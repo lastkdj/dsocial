@@ -59,7 +59,7 @@ const Proyectos = () => {
           <Grid
             item
             container
-            xs={9}
+            xs={12}
             md={3}
             justifyContent="center"
             className="form_input_grid"
@@ -93,7 +93,7 @@ const Proyectos = () => {
           <Grid
             item
             container
-            xs={9}
+            xs={12}
             md={3}
             justifyContent="center"
             className="form_input_grid"
@@ -136,12 +136,13 @@ const Proyectos = () => {
           </Grid>
           <Grid
             item
-            xs={10}
+            xs={12}
             md={6}
             container
             alignItems="center"
             justifyContent="center"
-            style={{ margin: "10px", padding: "10px" }}
+            className="form_input_grid"
+            style={{ marginBottom: "10px" }}
           >
             <textarea className="form_input_description" name="message" />
           </Grid>
