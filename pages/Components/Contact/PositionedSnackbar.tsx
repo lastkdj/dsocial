@@ -2,7 +2,11 @@ import * as React from "react";
 import { Grid, Typography } from "@material-ui/core";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 
-export default function PositionedSnackbar() {
+export interface Props {
+  children: JSX.Element | JSX.Element[];
+}
+
+export default function PositionedSnackbar<Props>() {
   return (
     <Grid
       container

@@ -179,12 +179,12 @@ const Proyectos = () => {
         </Grid>
       </form>
       <Snackbar
+        style={{ width: "300px" }}
         open={open}
         autoHideDuration={3000}
         onClose={handleClose}
         message="Enviado!"
         anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
-        children={<PositionedSnackbar />}
       />
     </Grid>
   );
