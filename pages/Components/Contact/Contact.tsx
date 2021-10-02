@@ -5,13 +5,11 @@ import Button from "@mui/material/Button";
 import emailjs from "emailjs-com";
 import Snackbar from "@mui/material/Snackbar";
 import "react-phone-number-input/style.css";
-import PhoneInput from "react-phone-number-input";
 
 const Proyectos = () => {
   const isLaptop = useMediaQuery({ query: "(max-width: 1366px)" });
 
   const [open, setOpen] = React.useState(false);
-  const [value, setValue] = useState<any>();
 
   const sendEmail = (e: any) => {
     e.preventDefault();
@@ -19,14 +17,13 @@ const Proyectos = () => {
     emailjs
       .sendForm(
         "service_74ygwyu",
-        "template_tvry8pl",
+        "template_5bu0jc9",
         e.target,
         "user_srd5fqbLmsiCxbMuGK9Yf"
       )
       .then(
         (result) => {
           console.log(result.text);
-          console.log(value);
         },
         (error) => {
           console.log(error.text);
@@ -109,14 +106,9 @@ const Proyectos = () => {
               style={{ marginBottom: "10px" }}
             >
               <Typography className="contact_text_tittle">Telefono</Typography>
-              <PhoneInput
-                style={{ width: "100%" }}
-                placeholder="Enter phone number"
-                value={value}
-                onChange={setValue}
-                name="from_number"
-              />
+              <input className="form_input" name="from_org" />
             </Grid>
+
             <Grid
               item
               container
@@ -153,7 +145,7 @@ const Proyectos = () => {
             className="form_input_grid"
             style={{ marginBottom: "10px" }}
           >
-            <textarea className="form_input_description" name="message" />
+            <textarea className="form_input_description" name="from_message" />
           </Grid>
           <Grid
             container

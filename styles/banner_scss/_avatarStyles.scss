@@ -19,12 +19,6 @@ $xlBreakpoint: 1920px;
   height: 880px;
 }
 
-@media (max-width: $lgBreakpoint) {
-  .avatar_container {
-    display: none;
-  }
-}
-
 @media (min-width: $mdBreakpoint) and (max-width: $xlBreakpoint) {
   .avatar_size {
     width: 400px;

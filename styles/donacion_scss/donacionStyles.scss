@@ -1,0 +1,30 @@
+@import "./donacionText";
+
+.donacion_container {
+  background-image: url("../../public/donacion\ wall.jpg");
+  padding-top: 76px;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.donacion_grid {
+  padding: 140px 50px 50px 50px;
+  flex-direction: column;
+}
+
+.text_grid {
+  margin: 5px 0px;
+}
+
+@media (max-width: 960px) {
+  .donacion_grid {
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 414px) {
+  .donacion_grid {
+    padding: 30px;
+  }
+}

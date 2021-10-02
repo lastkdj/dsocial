@@ -1,0 +1,102 @@
+@import "./voluntarioText";
+
+.voluntario_container {
+  background-image: url("../..//public/landscape2.jpg");
+  padding: 146px 0px;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.in-kind_container {
+  background-image: url("../..//public/landscape3.jpg");
+  padding: 146px 0px;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.voluntario_padding {
+  padding: 10px;
+}
+
+.voluntario_input {
+  margin: 10px 0px;
+}
+
+.fade_in_success {
+  animation-duration: 1.3s;
+  animation-name: fadeIn;
+  transition: 0.5s;
+}
+
+.voluntario_button_banner {
+  border-radius: 30px;
+  margin: 5px 0px;
+  background-color: #dbb312;
+  color: white;
+  width: 100%;
+  text-transform: none;
+  border: 1px solid #1f232c;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+
+.voluntario_button_banner:hover {
+  background-color: #dbb312;
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+.dona_button_banner_back {
+  border-radius: 30px;
+  background-color: #0c2335;
+  color: white;
+  width: 100%;
+  text-transform: none;
+  border: 1px solid #1f232c;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+
+.dona_button_banner_back:hover {
+  background-color: #0c2335;
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+@media (max-width: 1366px) {
+  .voluntario_input {
+    margin: 10px 10px;
+  }
+
+  .dona_button_banner_back {
+    font-size: 0.8em;
+  }
+
+  .voluntario_button_banner {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 959px) {
+  .voluntario_container {
+    height: auto;
+  }
+  .dona_button_banner_back {
+    font-size: 0.7em;
+  }
+
+  .voluntario_button_banner {
+    font-size: 0.7em;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

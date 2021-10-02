@@ -3,6 +3,7 @@ import { Grid, Typography } from "@material-ui/core";
 import Image from "next/image";
 import { useMediaQuery } from "react-responsive";
 import Dialog from "@mui/material/Dialog";
+import ImageList from "./ImageLIst";
 
 export interface SimpleDialogProps {
   open: boolean;
@@ -99,12 +100,7 @@ const Finance = () => {
           className="fin_image"
           justifyContent="center"
         >
-          <Image
-            src="/save.png"
-            alt=""
-            width={isLaptop ? 400 : 600}
-            height={isLaptop ? 250 : 400}
-          />
+          <ImageList />
         </Grid>
       </Grid>
       <Grid

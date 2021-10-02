@@ -1,7 +1,7 @@
 $xsBreakpoint: 414px;
 $smBreakpoint: 600px;
 $mdBreakpoint: 959px;
-$lgBreakpoint: 1279px;
+$lgBreakpoint: 1280px;
 $xlBreakpoint: 1919px;
 $minTablet: 960px;
 $minLaptop: 1280px;
@@ -23,7 +23,28 @@ $minLaptop: 1280px;
   border: 1px solid #1f232c;
 }
 
+.dona_empresas {
+  margin: 10px 0px;
+  border-radius: 30px;
+  padding: 10px;
+  background-color: #0c2335;
+  color: white;
+  width: 100%;
+  text-transform: none;
+  border: 1px solid #1f232c;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+
+.dona_empresas:hover {
+  background-color: #0c2335;
+  color: #ffffff;
+  border: 1px solid #4d309c;
+  transform: scale(1.1);
+}
+
 .dona_button_banner {
+  margin: 10px 0px;
   border-radius: 30px;
   padding: 10px;
   background-color: #dbb312;
@@ -38,7 +59,6 @@ $minLaptop: 1280px;
 .dona_button_banner:hover {
   background-color: #dbb312;
   color: #ffffff;
-  border: 1px solid #4d309c;
   transform: scale(1.1);
 }
 
@@ -94,5 +114,11 @@ $minLaptop: 1280px;
   .bio_button {
     padding: 12px;
     font-size: 0.8em;
+  }
+}
+
+@media (min-width: 1366px) and (max-width: $xlBreakpoint) {
+  .dona_empresas {
+    margin-left: 100px;
   }
 }

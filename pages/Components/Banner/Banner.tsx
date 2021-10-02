@@ -1,7 +1,9 @@
-import React from "react";
 import { Grid, Typography } from "@material-ui/core";
 import Dona from "./Dona";
 import Voluntario from "./Voluntario";
+import Empresa from "./Empresa";
+import Link from "next/link";
+import InstagramIcon from "@mui/icons-material/Instagram";
 
 export interface Props {}
 
@@ -36,42 +38,55 @@ const Banner: React.FC<Props> = () => {
           </Typography>
         </Grid>
         <Grid container item className="bio_buttons_container">
-          <Grid
-            item
-            xs={4}
-            sm={3}
-            md={5}
-            lg={4}
-            xl={3}
-            className="bio_buttons_banner"
-          >
-            <Voluntario />
-          </Grid>
-          <Grid
-            item
-            xs={4}
-            sm={3}
-            md={5}
-            lg={4}
-            xl={3}
-            className="bio_buttons_banner"
-          >
-            <Dona />
-          </Grid>
+          <Link href="/Voluntario">
+            <Grid
+              item
+              xs={4}
+              sm={3}
+              md={5}
+              lg={4}
+              xl={3}
+              className="bio_buttons_banner"
+            >
+              <Voluntario />
+            </Grid>
+          </Link>
+          <Link href="/Donacion">
+            <Grid
+              item
+              xs={4}
+              sm={3}
+              md={5}
+              lg={4}
+              xl={3}
+              className="bio_buttons_banner"
+            >
+              <Dona />
+            </Grid>
+          </Link>
+          <Link href="/Empresas">
+            <Grid
+              item
+              xs={4}
+              sm={3}
+              md={5}
+              lg={4}
+              xl={3}
+              className="bio_buttons_banner"
+            >
+              <Empresa />
+            </Grid>
+          </Link>{" "}
         </Grid>
       </Grid>
       <Grid
         container
         alignItems="flex-end"
-        justifyContent="center"
+        justifyContent="flex-end"
         item
         xs={4}
         className="avatar_container"
-      >
-        {/* {isTabletOrMobile ? null : (
-      <Image src="/profilefail.png" alt="" width="500px" height="880px" />
-    )} */}
-      </Grid>
+      ></Grid>
     </Grid>
   );
 };
