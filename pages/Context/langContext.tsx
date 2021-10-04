@@ -4,7 +4,7 @@ import MensajesEng from "../Lang/en-US.json";
 import MensajesFr from "../Lang/fr-FR.json";
 import { IntlProvider, IntlShape } from "react-intl";
 
-const langContext = createContext("");
+const langContext = createContext(null);
 
 const LangProvider = ({ children }: any) => {
   const [locale, setLocale] = useState("es-CL");
@@ -30,7 +30,7 @@ const LangProvider = ({ children }: any) => {
   };
 
   return (
-    <langContext.Provider value={setLenguaje}>
+    <langContext.Provider value={{ setLenguaje: setLenguaje }}>
       <IntlProvider locale={locale} messages={mensajes}>
         {children}
       </IntlProvider>
