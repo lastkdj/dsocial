@@ -6,7 +6,7 @@ import { useMediaQuery } from "react-responsive";
 import Image from "next/image";
 import Menu from "./Menu";
 import { FormattedMessage } from "react-intl";
-import { langContext } from "../../Context/langContext";
+import { langContext } from "../../../Components/Context/langContext";
 
 export interface Props {}
 

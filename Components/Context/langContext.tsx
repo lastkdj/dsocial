@@ -1,8 +1,8 @@
 import React, { createContext, useState, useMemo } from "react";
-import MensajesEsp from "../Lang/es-CL.json";
-import MensajesEng from "../Lang/en-US.json";
-import MensajesFr from "../Lang/fr-FR.json";
-import { IntlProvider, IntlShape } from "react-intl";
+import MensajesEsp from "../../pages/Lang/es-CL.json";
+import MensajesEng from "../../pages/Lang/en-US.json";
+import MensajesFr from "../../pages/Lang/fr-FR.json";
+import { IntlProvider } from "react-intl";
 
 const langContext = createContext<any>(null);
 

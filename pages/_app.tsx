@@ -4,7 +4,7 @@ import Layout from "./Layout/Layout";
 import { StylesProvider } from "@material-ui/core/styles";
 import { createTheme } from "@material-ui/core/styles";
 import { ThemeProvider } from "@material-ui/styles";
-import { LangProvider } from "./Context/langContext";
+import { LangProvider } from "../Components/Context/langContext";
 
 const theme = createTheme({
   typography: {
