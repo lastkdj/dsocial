@@ -111,7 +111,6 @@ const Proyectos = () => {
           <span className="about_tittle_span">
             <FormattedMessage id="projects.titulo" defaultMessage="PROYECTOS" />
           </span>
-
           <FormattedMessage
             id="projects.titulodos"
             defaultMessage="EN CONSTRUCCION"

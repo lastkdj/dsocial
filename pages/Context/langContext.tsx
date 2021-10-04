@@ -10,10 +10,6 @@ const LangProvider = ({ children }: any) => {
   const [locale, setLocale] = useState("es-CL");
   const [mensajes, setMensajes] = useState(MensajesEsp);
 
-  interface Props {
-    intl: IntlShape;
-  }
-
   const setLenguaje = (lenguaje: any) => {
     switch (lenguaje) {
       case "es-CL":
