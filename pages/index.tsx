@@ -13,7 +13,7 @@ import Contact from "./Components/Contact/Contact";
 const Home: NextPage = () => {
   return (
     <div>
-      {/* <Header /> */}
+      <Header />
       <Banner />
       <Insta />
       <About />

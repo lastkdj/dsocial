@@ -116,9 +116,3 @@ $minLaptop: 1280px;
     font-size: 0.8em;
   }
 }
-
-@media (min-width: 1366px) and (max-width: $xlBreakpoint) {
-  .dona_empresas {
-    margin-left: 100px;
-  }
-}

@@ -1,6 +1,5 @@
 import "../styles/App.scss";
 import type { AppProps } from "next/app";
-import Layout from "./Layout/Layout";
 import { StylesProvider } from "@material-ui/core/styles";
 import { createTheme } from "@material-ui/core/styles";
 import { ThemeProvider } from "@material-ui/styles";
@@ -24,9 +23,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <ThemeProvider theme={theme}>
       <StylesProvider injectFirst={true}>
         <LangProvider>
-          <Layout>
-            <Component {...pageProps} />
-          </Layout>
+          <Component {...pageProps} />
         </LangProvider>
       </StylesProvider>
     </ThemeProvider>

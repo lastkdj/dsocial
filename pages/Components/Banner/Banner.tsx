@@ -30,7 +30,7 @@ const Banner: React.FC<Props> = () => {
         <Grid container className="banner_text">
           <Typography
             className="bio_tittle"
-            style={{ textTransform: "uppercase" }}
+            style={{ textTransform: "uppercase", textAlign: "center" }}
           >
             <FormattedMessage
               id="banner.titulo"
@@ -38,7 +38,12 @@ const Banner: React.FC<Props> = () => {
             />
           </Typography>
         </Grid>
-        <Grid container item className="bio_buttons_container">
+        <Grid
+          container
+          item
+          className="bio_buttons_container"
+          style={{ justifyContent: "center" }}
+        >
           <Link href="/Voluntario">
             <Grid
               item
