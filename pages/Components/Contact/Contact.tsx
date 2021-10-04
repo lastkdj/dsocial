@@ -5,6 +5,7 @@ import Button from "@mui/material/Button";
 import emailjs from "emailjs-com";
 import Snackbar from "@mui/material/Snackbar";
 import "react-phone-number-input/style.css";
+import { FormattedMessage } from "react-intl";
 
 const Proyectos = () => {
   const isLaptop = useMediaQuery({ query: "(max-width: 1366px)" });
@@ -52,7 +53,10 @@ const Proyectos = () => {
       justifyContent="center"
     >
       <Grid item container xs={12} justifyContent="center">
-        <Typography className="contact_tittle">CONTACTANOS</Typography>
+        <Typography className="contact_tittle">
+          {" "}
+          <FormattedMessage id="contact.titulo" defaultMessage="CONTACTANOS" />
+        </Typography>
       </Grid>
       <form onSubmit={sendEmail}>
         <Grid item container xs={12} justifyContent="center">
@@ -71,7 +75,9 @@ const Proyectos = () => {
               alignItems="center"
               style={{ marginBottom: "10px" }}
             >
-              <Typography className="contact_text_tittle">Nombre</Typography>
+              <Typography className="contact_text_tittle">
+                <FormattedMessage id="contact.nombre" defaultMessage="Nombre" />
+              </Typography>
               <input className="form_input" name="from_name" required />
             </Grid>
             <Grid
@@ -81,7 +87,9 @@ const Proyectos = () => {
               alignItems="center"
               style={{ marginBottom: "10px" }}
             >
-              <Typography className="contact_text_tittle">Email</Typography>
+              <Typography className="contact_text_tittle">
+                <FormattedMessage id="contact.email" defaultMessage="  Email" />
+              </Typography>
               <input
                 type="email"
                 className="form_input"
@@ -105,7 +113,13 @@ const Proyectos = () => {
               alignItems="center"
               style={{ marginBottom: "10px" }}
             >
-              <Typography className="contact_text_tittle">Telefono</Typography>
+              <Typography className="contact_text_tittle">
+                {" "}
+                <FormattedMessage
+                  id="contact.telefono"
+                  defaultMessage="Telefono"
+                />
+              </Typography>
               <input className="form_input" name="from_org" />
             </Grid>
 
@@ -117,7 +131,10 @@ const Proyectos = () => {
               style={{ marginBottom: "10px" }}
             >
               <Typography className="contact_text_tittle">
-                Organización / Institución
+                <FormattedMessage
+                  id="contact.org"
+                  defaultMessage="Organización / Institución"
+                />
               </Typography>
               <input className="form_input" name="from_org" />
             </Grid>
@@ -133,7 +150,12 @@ const Proyectos = () => {
             alignItems="center"
             justifyContent="center"
           >
-            <Typography className="contact_text_tittle">Descripción</Typography>
+            <Typography className="contact_text_tittle">
+              <FormattedMessage
+                id="contact.descripcion"
+                defaultMessage="Descripción"
+              />
+            </Typography>
           </Grid>
           <Grid
             item
@@ -161,7 +183,7 @@ const Proyectos = () => {
               className="form_button_banner"
               type="submit"
             >
-              Enviar{" "}
+              <FormattedMessage id="contact.boton" defaultMessage="Enviar" />{" "}
             </Button>
           </Grid>
           <Grid
@@ -175,7 +197,10 @@ const Proyectos = () => {
           >
             {" "}
             <Typography className="contact_text">
-              contacto@dshchile.org
+              <FormattedMessage
+                id="contact.contact"
+                defaultMessage="contacto@dshchile.org"
+              />
             </Typography>
           </Grid>
         </Grid>

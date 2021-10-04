@@ -15,6 +15,7 @@ import {
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
 import emailjs from "emailjs-com";
+import { FormattedMessage } from "react-intl";
 
 const Donacion = () => {
   const [tipo, setTipo] = React.useState("");
@@ -109,7 +110,10 @@ const Donacion = () => {
             alignItems="center"
           >
             <Typography className="donacion_tittle">
-              FORMULARIO DE VOLUNTARIADO
+              <FormattedMessage
+                id="voluntario.titulo"
+                defaultMessage="FORMULARIO DE VOLUNTARIADO"
+              />
             </Typography>
           </Grid>
           <Grid
@@ -156,6 +160,7 @@ const Donacion = () => {
                   name="from_number"
                   fullWidth={true}
                   required
+                  type="number"
                 />
               </Grid>
               <Grid
@@ -171,6 +176,7 @@ const Donacion = () => {
                   label="Email"
                   variant="outlined"
                   name="from_email"
+                  type="email"
                   fullWidth={true}
                   required
                 />

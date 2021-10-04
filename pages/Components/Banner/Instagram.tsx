@@ -1,5 +1,6 @@
 import { Grid, Typography } from "@material-ui/core";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import { FormattedMessage } from "react-intl";
 
 export default function Insta() {
   const goUrl = () => {
@@ -16,7 +17,13 @@ export default function Insta() {
       onClick={goUrl}
     >
       <Typography style={{ margin: "10px" }}>
-        <a style={{ color: "inherit" }}> Siguenos en Instagram! </a>
+        <a style={{ color: "inherit" }}>
+          {" "}
+          <FormattedMessage
+            id="banner.instagram"
+            defaultMessage="Siguenos en Instagram!"
+          />{" "}
+        </a>
       </Typography>
       <InstagramIcon className="socials" />
     </Grid>

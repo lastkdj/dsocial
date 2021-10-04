@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Grid, Typography } from "@material-ui/core";
 import Image from "next/image";
 import { useMediaQuery } from "react-responsive";
+import { FormattedMessage } from "react-intl";
 
 const Experience = () => {
   const isLaptop = useMediaQuery({ query: "(max-width: 1366px)" });
@@ -77,28 +78,46 @@ const Experience = () => {
         >
           <Grid container item xs={12} id="exp">
             <Typography className="exp_tittle">
-              <span className="about_tittle_span">EXPERIENCIA</span> DS&H
+              <span className="about_tittle_span">
+                <FormattedMessage
+                  id="experience.titulo"
+                  defaultMessage="EXPERIENCIA"
+                />
+              </span>{" "}
+              <FormattedMessage
+                id="experience.titulodos"
+                defaultMessage="DS&H"
+              />
             </Typography>
           </Grid>
           <Grid container item xs={12} justifyContent="flex-end">
             <Typography className="exp_tittle_two">
-              Ecuador y Francia
+              <FormattedMessage
+                id="experience.subtitulo"
+                defaultMessage="Ecuador y Francia"
+              />
             </Typography>
           </Grid>
           <Grid container item xs={12}>
             <Typography className="exp_text">
-              Desarrollo Social y Hábitat (DS&H) empezó su trayectoria en
+              <FormattedMessage
+                id="experience.descripcionUno"
+                defaultMessage=" Desarrollo Social y Hábitat (DS&H) empezó su trayectoria en
               Ecuador en 2008 con el fin de apoyar a NNA en situación de riesgo
-              y fortalecerlos en el ámbito emocional y educativo.
+              y fortalecerlos en el ámbito emocional y educativo."
+              />
             </Typography>
           </Grid>
           <Grid container item xs={12}>
             <Typography className="exp_text">
-              A partir de un proyecto literario Viajando con Niños, realizado
+              <FormattedMessage
+                id="experience.descripcionUno"
+                defaultMessage="A partir de un proyecto literario Viajando con Niños, realizado
               con NNA institucionalizados y de la calle, DS&H se estableció
               formalmente como ONG ecuatoriana en Mayo 2009. Pocos meses después
               y con el fin de levantar fondos para sus operaciones en Ecuador,
-              DS&H France fue creado.
+              DS&H France fue creado."
+              />
             </Typography>
           </Grid>
         </Grid>
@@ -122,11 +141,10 @@ const Experience = () => {
           className="exp_right_container_two fadeOut"
         >
           <Typography className="exp_text">
-            A partir de un proyecto literario Viajando con Niños, realizado con
-            NNA institucionalizados y de la calle, DS&H se estableció
-            formalmente como ONG ecuatoriana en Mayo 2009. Pocos meses después y
-            con el fin de levantar fondos para sus operaciones en Ecuador, DS&H
-            France fue creado.
+            <FormattedMessage
+              id="experience.descripcionTres"
+              defaultMessage="Con el apoyo de la ONG belga Mobil School, DS&H llevó la educación a la calle con el proyecto de educación popular Cuéntamelo Todo Quito en Junio 2009 y Cuéntamelo Todo Ibarra (ciudad al norte de Quito) en Octubre 2011. En el 2012 estos proyectos fueron transferidos a Fe & Alegría y más de 10 años después, siguen promoviendo desde la calle estrategias y herramientas innovadoras enfocadas en los derechos de los niños y el desarrollo personal de los jóvenes."
+            />
           </Typography>
         </Grid>
       </Grid>

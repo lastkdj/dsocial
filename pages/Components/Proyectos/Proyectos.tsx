@@ -3,6 +3,7 @@ import { Grid, Typography } from "@material-ui/core";
 import Image from "next/image";
 import { useMediaQuery } from "react-responsive";
 import { EnvironmentOutlined } from "@ant-design/icons";
+import { FormattedMessage } from "react-intl";
 
 const Proyectos = () => {
   const isLaptop = useMediaQuery({ query: "(max-width: 1366px)" });
@@ -107,7 +108,14 @@ const Proyectos = () => {
         className="who_tittle_container fadeOut"
       >
         <Typography className="proy_tittle">
-          <span className="about_tittle_span">PROYECTOS</span> EN CONSTRUCCION
+          <span className="about_tittle_span">
+            <FormattedMessage id="projects.titulo" defaultMessage="PROYECTOS" />
+          </span>
+
+          <FormattedMessage
+            id="projects.titulodos"
+            defaultMessage="EN CONSTRUCCION"
+          />
         </Typography>
       </Grid>
       <Grid
@@ -122,11 +130,14 @@ const Proyectos = () => {
         className="proy_tittle_text fadeOut"
       >
         <Typography className="proy_text" style={{ textAlign: "center" }}>
-          DS&H desea trabajar en terreno, dado la contingencia, nos
-          focalizaremos este año en la Región Metropolitana. Cada uno de los
-          proyectos con los cuales estamos trabajando nacen desde las
-          necesidades del territorio. Por lo que es imperativo tener un vinculo
-          estrecho con ellos.
+          <FormattedMessage
+            id="projects.descripcion"
+            defaultMessage="DS&H desea trabajar en terreno, dado la contingencia, nos
+            focalizaremos este año en la Región Metropolitana. Cada uno de los
+            proyectos con los cuales estamos trabajando nacen desde las
+            necesidades del territorio. Por lo que es imperativo tener un vinculo
+            estrecho con ellos."
+          />
         </Typography>
       </Grid>
 
@@ -161,20 +172,32 @@ const Proyectos = () => {
             </Grid>{" "}
             <Grid item xs={12}>
               <Typography className="proy_text_tittle">
-                Campamento las Totoras{" "}
+                <FormattedMessage
+                  id="projects.subtitulo"
+                  defaultMessage=" Campamento las Totoras"
+                />{" "}
               </Typography>
-              <Typography className="proy_country">Quilicura, Chile</Typography>
+              <Typography className="proy_country">
+                {" "}
+                <FormattedMessage
+                  id="projects.localizacion"
+                  defaultMessage="Quilicura, Chile"
+                />
+              </Typography>
             </Grid>{" "}
             <Grid item xs={12}>
               <Typography className="proy_text">
-                El campamento las Totoras nos acogido junto a su dirigenta
-                Viviana, que nos ayudo a visualizar la poca preocupación por los
-                desechos en este campamento. Es una comunidad emprendedora que
-                desea y necesita preocuparse por el mañana. Queremos ayudarles a
-                obtener todo lo necesario para que los residuos reciclables
-                puedan transformarse en algo mejor para la comunidad, con el fin
-                de fomentar la economía circular que estos residuos podrían
-                generar.
+                <FormattedMessage
+                  id="projects.descripcionUno"
+                  defaultMessage="El campamento las Totoras nos acogido junto a su dirigenta
+            Viviana, que nos ayudo a visualizar la poca preocupación por los
+            desechos en este campamento. Es una comunidad emprendedora que
+            desea y necesita preocuparse por el mañana. Queremos ayudarles a
+            obtener todo lo necesario para que los residuos reciclables
+            puedan transformarse en algo mejor para la comunidad, con el fin
+            de fomentar la economía circular que estos residuos podrían
+            generar."
+                />
               </Typography>
             </Grid>
           </Grid>
@@ -203,18 +226,27 @@ const Proyectos = () => {
             </Grid>{" "}
             <Grid item xs={12}>
               <Typography className="proy_text_tittle">
-                Liceo Juan Mackena O’Relly
+                <FormattedMessage
+                  id="projects.subtituloDos"
+                  defaultMessage="Liceo Juan Mackena O’Relly"
+                />
               </Typography>
               <Typography className="proy_country">
-                Puente Alto, Chile
+                <FormattedMessage
+                  id="projects.localizacionDos"
+                  defaultMessage="Puente Alto, Chile"
+                />
               </Typography>
             </Grid>{" "}
             <Grid item xs={12}>
               <Typography className="proy_text">
-                El bienestar de l@s niños, niñas y adolescentes son la prioridad
-                para DS&H es por eso que el liceo público Juan Mackena O’Relly
-                en Puente Alto era el terreno adecuado para acoger un proyecto
-                de transformación de residuos.
+                <FormattedMessage
+                  id="projects.descripcionDos"
+                  defaultMessage="El bienestar de l@s niños, niñas y adolescentes son la prioridad
+                  para DS&H es por eso que el liceo público Juan Mackena O’Relly
+                  en Puente Alto era el terreno adecuado para acoger un proyecto
+                  de transformación de residuos."
+                />
               </Typography>
             </Grid>
           </Grid>

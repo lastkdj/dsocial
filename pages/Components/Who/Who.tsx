@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Grid, Typography } from "@material-ui/core";
 import Avatar from "@material-ui/core/Avatar";
+import { FormattedMessage } from "react-intl";
 
 const Who = () => {
   useEffect(() => {
@@ -71,7 +72,13 @@ const Who = () => {
         className="who_tittle_container"
       >
         <Typography className="who_tittle">
-          <span className="about_tittle_span">¿QUIENES</span> SOMOS?
+          <span className="about_tittle_span">
+            <FormattedMessage
+              id="who.tituloQuienes"
+              defaultMessage="¿QUIENES"
+            />
+          </span>
+          <FormattedMessage id="who.tituloSomos" defaultMessage="SOMOS?" />
         </Typography>
       </Grid>
       <Grid container>
@@ -84,7 +91,13 @@ const Who = () => {
           className="who_grid_container fadeOut"
           style={{ order: 0 }}
         >
-          <Typography className="who_name">Marisol Molina</Typography>
+          <Typography className="who_name">
+            {" "}
+            <FormattedMessage
+              id="who.marisol"
+              defaultMessage="Marisol Molina"
+            />
+          </Typography>
           <Avatar
             src="https://i.imgur.com/eNLmvNv.jpg"
             alt=""
@@ -101,21 +114,30 @@ const Who = () => {
           style={{ order: 1 }}
         >
           <Typography className="who_text_tittle">
-            Arquitecta, especialista en sociologia urbana y vivienda sociales
+            <FormattedMessage
+              id="who.marisolTitulo"
+              defaultMessage="Arquitecta, especialista en sociologia urbana y vivienda sociales"
+            />
           </Typography>
           <Typography className="who_text">
-            Máster en Arquitectura en la ENSA Paris-Malaquais (Francia), y
-            diplomado en Hábitat Residencial en Contexto de Vulnerabilidad
-            Social en Universidad de Chile y Postulante Doctorado en Sociología
-            Urbana en Universidad de Lorraine (Francia).
+            <FormattedMessage
+              id="who.marisolDescripcionUno"
+              defaultMessage=" Máster en Arquitectura en la ENSA Paris-Malaquais (Francia), y
+              diplomado en Hábitat Residencial en Contexto de Vulnerabilidad
+              Social en Universidad de Chile y Postulante Doctorado en Sociología
+              Urbana en Universidad de Lorraine (Francia)."
+            />
           </Typography>
           <Typography className="who_text">
-            Cuenta con una vasta experiencia en oficina de arquitectura
-            sustentable y también en fundaciones como «Un Techo para Chile».
-            Gracias al trabajo en terreno que ha realizado para su investigación
-            de doctorado, cuenta con un bagaje social relacionado con temas como
-            : la mixtura urbana y social, renovación urbana y intervenciones de
-            barrios.
+            <FormattedMessage
+              id="who.marisolDescripcionDos"
+              defaultMessage="Cuenta con una vasta experiencia en oficina de arquitectura
+              sustentable y también en fundaciones como «Un Techo para Chile».
+              Gracias al trabajo en terreno que ha realizado para su investigación
+              de doctorado, cuenta con un bagaje social relacionado con temas como
+              : la mixtura urbana y social, renovación urbana y intervenciones de
+              barrios."
+            />
           </Typography>
         </Grid>
       </Grid>
@@ -130,20 +152,29 @@ const Who = () => {
           className="text_container_left fadeOut"
         >
           <Typography className="who_text_tittle_laetita">
-            Internacionalista, especialista en temas de la niñez y movilización
-            de recursos
+            <FormattedMessage
+              id="who.leticiaTitulo"
+              defaultMessage="Internacionalista, especialista en temas de la niñez y movilización
+              de recursos"
+            />
           </Typography>
           <Typography className="who_text">
-            Maestría en Política mención América Latina, de la Universidad de
-            Londres (UK), y diplomado de gerencia social de la Universidad
-            Católica Andrés Bello de Caracas (Venezuela).
+            <FormattedMessage
+              id="who.leticiaDescripcionUno"
+              defaultMessage=" Maestría en Política mención América Latina, de la Universidad de
+              Londres (UK), y diplomado de gerencia social de la Universidad
+              Católica Andrés Bello de Caracas (Venezuela)."
+            />
           </Typography>
           <Typography className="who_text">
-            Trabajó durante 20 años con ONG humanitarias y de desarrollo social
-            en Europa y América Latina, con interés particular en temas de
-            derechos de l@s niñ@s, entre otros : Médecin du Monde, Medecin sans
-            Frontieres, Fe y Alegría, Plan International, Save the Children y
-            Better Cotton Initiative.
+            <FormattedMessage
+              id="who.leticiaDescripcionDos"
+              defaultMessage=" Trabajó durante 20 años con ONG humanitarias y de desarrollo social
+              en Europa y América Latina, con interés particular en temas de
+              derechos de l@s niñ@s, entre otros : Médecin du Monde, Medecin sans
+              Frontieres, Fe y Alegría, Plan International, Save the Children y
+              Better Cotton Initiative."
+            />
           </Typography>
         </Grid>
         <Grid
@@ -160,7 +191,13 @@ const Who = () => {
             alt=""
             className="avatar"
           ></Avatar>
-          <Typography className="who_name">Laetitia Courtois</Typography>
+          <Typography className="who_name">
+            {" "}
+            <FormattedMessage
+              id="who.leticia"
+              defaultMessage="Laetitia Courtois"
+            />
+          </Typography>
         </Grid>
       </Grid>
       <Grid container>
@@ -174,7 +211,9 @@ const Who = () => {
           className="who_grid_container fadeOut"
           style={{ order: 4 }}
         >
-          <Typography className="who_name">Pierre Krop</Typography>{" "}
+          <Typography className="who_name">
+            <FormattedMessage id="who.pierre" defaultMessage="Pierre Krop" />
+          </Typography>{" "}
           <Avatar
             src="https://i.imgur.com/eVlHS1h.png"
             alt=""
@@ -191,17 +230,28 @@ const Who = () => {
           style={{ order: 5 }}
         >
           <Typography className="who_text_tittle">
-            Ingeniero geólogo, especialista en subsuelo
+            <FormattedMessage
+              id="who.pierreTitulo"
+              defaultMessage="Ingeniero geólogo, especialista en subsuelo"
+            />
           </Typography>
           <Typography className="who_text">
-            Máster en geotecnia en la ENSG de Ingeniería de Nancy (Francia)
+            {" "}
+            <FormattedMessage
+              id="who.pierreDescripcionUno"
+              defaultMessage="Máster en geotecnia en la ENSG de Ingeniería de Nancy (Francia)"
+            />
           </Typography>
           <Typography className="who_text">
-            Experiencia de más de diez años en una empresa de subsuelo, hacen de
-            él un especialista de la construcción.Amante del deporte y de la
-            naturaleza, su gran interés reside en generar menos residuos. Su
-            preocupación se enfoca en trabajar siempre con materias primas que
-            permitan soluciones a largo plazo.
+            {" "}
+            <FormattedMessage
+              id="who.pierreDescripcionDos"
+              defaultMessage="Experiencia de más de diez años en una empresa de subsuelo, hacen de
+              él un especialista de la construcción.Amante del deporte y de la
+              naturaleza, su gran interés reside en generar menos residuos. Su
+              preocupación se enfoca en trabajar siempre con materias primas que
+              permitan soluciones a largo plazo."
+            />
           </Typography>
         </Grid>
       </Grid>

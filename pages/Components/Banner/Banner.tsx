@@ -4,6 +4,7 @@ import Voluntario from "./Voluntario";
 import Empresa from "./Empresa";
 import Link from "next/link";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import { FormattedMessage } from "react-intl";
 
 export interface Props {}
 
@@ -27,14 +28,14 @@ const Banner: React.FC<Props> = () => {
         className="bio_container"
       >
         <Grid container className="banner_text">
-          <Typography className="bio_tittle">DA UNA MANO AMIGA</Typography>
-          <Typography className="bio_tittle_two">
-            A LOS QUE LA NECESITEN
-          </Typography>
-          <Typography className="bio_description">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industrys standard dummy text
-            ever since the 1500s
+          <Typography
+            className="bio_tittle"
+            style={{ textTransform: "uppercase" }}
+          >
+            <FormattedMessage
+              id="banner.titulo"
+              defaultMessage="Para tener un mejor futuro ayúdenos a mejorar el presente"
+            />
           </Typography>
         </Grid>
         <Grid container item className="bio_buttons_container">

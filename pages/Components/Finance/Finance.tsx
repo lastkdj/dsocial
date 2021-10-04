@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useMediaQuery } from "react-responsive";
 import Dialog from "@mui/material/Dialog";
 import ImageList from "./ImageLIst";
+import { FormattedMessage } from "react-intl";
 
 export interface SimpleDialogProps {
   open: boolean;
@@ -122,47 +123,115 @@ const Finance = () => {
           <Grid container item xs={12}>
             <Grid item xs={12}>
               <Typography className="fin_tittle">
-                <span className="about_tittle_span">FINANCIAMIENTO</span>
+                <span className="about_tittle_span">
+                  <FormattedMessage
+                    id="finance.titulo"
+                    defaultMessage="FINANCIAMIENTO"
+                  />
+                </span>
               </Typography>
             </Grid>
             <Grid item xs={12} container justifyContent="center">
-              <Typography className="fin_tittle">DE PROYECTOS</Typography>
+              <Typography className="fin_tittle">
+                {" "}
+                <FormattedMessage
+                  id="finance.titulodos"
+                  defaultMessage=" DE PROYECTOS"
+                />
+              </Typography>
             </Grid>
           </Grid>
 
           <Grid container item xs={12}>
             <Typography className="fin_text">
-              DS&H recibió el apoyo financiero de la{" "}
-              <span className="fin_tittle_span">Universidad de Columbia</span>{" "}
-              en Nueva York,{" "}
+              {" "}
+              <FormattedMessage
+                id="finance.descripcion1"
+                defaultMessage="DS&H recibió el apoyo financiero de la"
+              />{" "}
               <span className="fin_tittle_span">
-                Palms for Life, Fondation Air France, UBS, Kraft, Lafarge
+                <FormattedMessage
+                  id="finance.descripcion2"
+                  defaultMessage="Universidad de Columbia"
+                />
+              </span>{" "}
+              <FormattedMessage
+                id="finance.descripcion3"
+                defaultMessage="en Nueva York,"
+              />{" "}
+              <span className="fin_tittle_span">
+                <FormattedMessage
+                  id="finance.descripcion4"
+                  defaultMessage="Palms for Life, Fondation Air France, UBS, Kraft, Lafarge"
+                />
               </span>
-              , y beneficio de los fondos de cooperación de las{" "}
+              <FormattedMessage
+                id="finance.descripcion5"
+                defaultMessage=", y beneficio de los fondos de cooperación de las"
+              />{" "}
               <span className="fin_tittle_span">
-                Embajadas de Alemania y Francia en Ecuador.
+                <FormattedMessage
+                  id="finance.descripcion6"
+                  defaultMessage="Embajadas de Alemania y Francia en Ecuador."
+                />
               </span>{" "}
-              DS&H Ecuador fue <span className="fin_tittle_span">premiado</span>{" "}
-              en 2011 por el{" "}
+              <FormattedMessage
+                id="finance.descripcion7"
+                defaultMessage=" DS&H Ecuador fue "
+              />
               <span className="fin_tittle_span">
-                Banco Interamericano de Desarrollo
+                <FormattedMessage
+                  id="finance.descripcion8"
+                  defaultMessage="premiado"
+                />
               </span>{" "}
-              por Buenas Prácticas de prevención del delito en América Latina y
-              El Caribe.
+              <FormattedMessage
+                id="finance.descripcion9"
+                defaultMessage="en 2011 por el"
+              />{" "}
+              <span className="fin_tittle_span">
+                <FormattedMessage
+                  id="finance.descripcion10"
+                  defaultMessage="Banco Interamericano de Desarrollo"
+                />
+              </span>{" "}
+              <FormattedMessage
+                id="finance.descripcion11"
+                defaultMessage=" por Buenas Prácticas de prevención del delito en América Latina y
+                El Caribe."
+              />
             </Typography>
           </Grid>
           <Grid container item xs={12}>
             <Typography className="fin_text">
-              Igualmente, DS&H Ecuador trabajo en red con los servicios
-              municipales de educación, salud y atención social de las
-              provincias de Pichincha e Imbabura, y junto con el{" "}
+              <FormattedMessage
+                id="finance.descripcion12"
+                defaultMessage="Igualmente, DS&H Ecuador trabajo en red con los servicios
+                municipales de educación, salud y atención social de las
+                provincias de Pichincha e Imbabura, y junto con el"
+              />{" "}
               <span className="fin_tittle_span">
-                Consejo Nacional de la Niñez y Adolescencia del Ecuador
+                <FormattedMessage
+                  id="finance.descripcion13"
+                  defaultMessage="Consejo Nacional de la Niñez y Adolescencia del Ecuador"
+                />
               </span>{" "}
-              y <span className="fin_tittle_span">Save the Children</span>{" "}
-              desarrollaron un estudio del estado de{" "}
+              <FormattedMessage id="finance.descripcion14" defaultMessage="y" />
               <span className="fin_tittle_span">
-                violencia contra niños y adolescentes en Ecuador.
+                <FormattedMessage
+                  id="finance.descripcion15"
+                  defaultMessage="Save the Children"
+                />
+              </span>{" "}
+              <FormattedMessage
+                id="finance.descripcion16"
+                defaultMessage="desarrollaron un estudio del estado de"
+              />{" "}
+              <span className="fin_tittle_span">
+                <FormattedMessage
+                  id="finance.descripcion17"
+                  defaultMessage="violencia contra niños y adolescentes en Ecuador."
+                />
               </span>
             </Typography>
             <Grid container item xs={12} justifyContent="flex-end">
@@ -171,7 +240,10 @@ const Finance = () => {
                 style={{ textAlign: "end", cursor: "pointer" }}
                 onClick={handleClickOpen}
               >
-                Articulos DS&H en el mundo
+                <FormattedMessage
+                  id="finance.descripcion18"
+                  defaultMessage="Articulos DS&H en el mundo"
+                />
               </Typography>
             </Grid>
           </Grid>
