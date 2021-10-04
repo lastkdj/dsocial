@@ -10,7 +10,7 @@ const LangProvider = ({ children }: any) => {
   const [locale, setLocale] = useState("es-CL");
   const [mensajes, setMensajes] = useState(MensajesEsp);
 
-  const setLenguaje = (lenguaje: string) => {
+  const setLenguaje = (lenguaje: any) => {
     switch (lenguaje) {
       case "es-CL":
         setLocale("es-CL");
@@ -30,7 +30,7 @@ const LangProvider = ({ children }: any) => {
   };
 
   return (
-    <langContext.Provider value={{ setLenguaje: setLenguaje }}>
+    <langContext.Provider value="">
       <IntlProvider locale={locale} messages={mensajes}>
         {children}
       </IntlProvider>
