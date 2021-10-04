@@ -163,7 +163,7 @@ const Header: React.FC<Props> = () => {
       >
         <Grid
           style={{ margin: "0px, 10px", cursor: "pointer" }}
-          onClick={() => idioma.setLenguaje("en-US")}
+          onClick={() => idioma("en-US")}
         >
           <Image
             src="/us.svg"
@@ -175,7 +175,7 @@ const Header: React.FC<Props> = () => {
         </Grid>
         <Grid
           style={{ margin: "0px, 10px", cursor: "pointer" }}
-          onClick={() => idioma.setLenguaje("fr-FR")}
+          onClick={() => idioma("fr-FR")}
         >
           <Image
             src="/france.svg"
@@ -187,7 +187,7 @@ const Header: React.FC<Props> = () => {
         </Grid>
         <Grid
           style={{ margin: "0px, 10px", cursor: "pointer" }}
-          onClick={() => idioma.setLenguaje("es-CL")}
+          onClick={() => idioma("es-CL")}
         >
           <Image
             src="/espana.svg"
