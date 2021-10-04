@@ -6,11 +6,11 @@ import { IntlProvider } from "react-intl";
 
 const langContext = createContext("");
 
-const LangProvider = ({ children }: any) => {
+const LangProvider = ({ children }) => {
   const [locale, setLocale] = useState("es-CL");
   const [mensajes, setMensajes] = useState(MensajesEsp);
 
-  const setLenguaje = (lenguaje: string) => {
+  const setLenguaje = (lenguaje) => {
     switch (lenguaje) {
       case "es-CL":
         setLocale("es-CL");
