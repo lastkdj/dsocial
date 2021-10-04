@@ -10,7 +10,7 @@ const LangProvider = ({ children }: any) => {
   const [locale, setLocale] = useState("es-CL");
   const [mensajes, setMensajes] = useState(MensajesEsp);
 
-  const setLenguaje: any = (lenguaje: any) => {
+  const setLenguaje: unknown = (lenguaje: any) => {
     switch (lenguaje) {
       case "es-CL":
         setLocale("es-CL");
