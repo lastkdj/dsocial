@@ -111,7 +111,7 @@ const Experience = () => {
           <Grid container item xs={12}>
             <Typography className="exp_text">
               <FormattedMessage
-                id="experience.descripcionUno"
+                id="experience.descripcionDos"
                 defaultMessage="A partir de un proyecto literario Viajando con Niños, realizado
               con NNA institucionalizados y de la calle, DS&H se estableció
               formalmente como ONG ecuatoriana en Mayo 2009. Pocos meses después
