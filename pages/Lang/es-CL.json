@@ -6,7 +6,7 @@
   "header.Boton": "Dona Aqui",
 
   "banner.titulo": "Para tener un mejor futuro ayúdenos a mejorar el presente",
-  "banner.botonVoluntario": "Voluntario",
+  "banner.botonVoluntario": "Voluntariado",
   "banner.botonDonar": "Donación!",
   "banner.botonEmpresas": "Empresas",
   "banner.instagram": "Siguenos en Instagram!",
@@ -71,6 +71,9 @@
   "projects.subtituloDos": "Liceo Juan Mackena O’Relly",
   "projects.localizacionDos": "Puente Alto, Chile",
   "projects.descripcionDos": "El bienestar de l@s niños, niñas y adolescentes son la prioridad para DS&H es por eso que el liceo público Juan Mackena O’Relly en Puente Alto era el terreno adecuado para acoger un proyecto de transformación de residuos. ",
+  "projects.subtituloTres": "Escuela Territorio Antártico",
+  "projects.localizacionTres": "San Miguel, Chile",
+  "projects.descripcionTres": "",
 
   "contact.titulo": "CONTACTANOS",
   "contact.nombre": "Nombre",

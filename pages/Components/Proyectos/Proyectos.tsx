@@ -1,9 +1,11 @@
 import React, { useEffect } from "react";
 import { Grid, Typography } from "@material-ui/core";
-import Image from "next/image";
+// import Image from "next/image";
 import { useMediaQuery } from "react-responsive";
 import { EnvironmentOutlined } from "@ant-design/icons";
 import { FormattedMessage } from "react-intl";
+import { Image } from "antd";
+import "antd/dist/antd.css";
 
 const Proyectos = () => {
   const isLaptop = useMediaQuery({ query: "(max-width: 1366px)" });
@@ -248,6 +250,120 @@ const Proyectos = () => {
                 />
               </Typography>
             </Grid>
+            <Grid item xs={12} container style={{ margin: "10px 0px" }}>
+              <Grid item xs={3}>
+                <Image
+                  src="/escuelas/img1.jpg"
+                  width={isLaptop ? 80 : 100}
+                  height={isLaptop ? 65 : 80}
+                />
+              </Grid>
+              <Grid item xs={3}>
+                <Image
+                  src="/escuelas/img2.png"
+                  width={isLaptop ? 80 : 100}
+                  height={isLaptop ? 65 : 80}
+                />
+              </Grid>
+              <Grid item xs={3}>
+                <Image
+                  src="/escuelas/img3.png"
+                  width={isLaptop ? 80 : 100}
+                  height={isLaptop ? 65 : 80}
+                />
+              </Grid>
+              <Grid item xs={3}>
+                <Image
+                  src="/escuelas/img4.png"
+                  width={isLaptop ? 80 : 100}
+                  height={isLaptop ? 65 : 80}
+                />
+              </Grid>
+            </Grid>
+          </Grid>
+        </Grid>
+        <Grid
+          container
+          item
+          xs={12}
+          sm={12}
+          md={5}
+          lg={4}
+          xl={3}
+          className="proy_job"
+          justifyContent="center"
+        >
+          <Grid container item justifyContent="center" className="translate">
+            <Grid
+              container
+              item
+              xs={2}
+              justifyContent="center"
+              alignItems="center"
+              className="icon_back"
+            >
+              <EnvironmentOutlined className="icon" />
+            </Grid>{" "}
+            <Grid item xs={12}>
+              <Typography className="proy_text_tittle">
+                <FormattedMessage
+                  id="projects.subtituloTres"
+                  defaultMessage="Escuela Territorio Antártico"
+                />{" "}
+              </Typography>
+              <Typography className="proy_country">
+                {" "}
+                <FormattedMessage
+                  id="projects.localizacionTres"
+                  defaultMessage="San Miguel"
+                />
+              </Typography>
+            </Grid>{" "}
+            <Grid item xs={12}>
+              <Typography className="proy_text">
+                <FormattedMessage
+                  id="projects.descripcionUno"
+                  defaultMessage="El campamento las Totoras nos acogido junto a su dirigenta
+            Viviana, que nos ayudo a visualizar la poca preocupación por los
+            desechos en este campamento. Es una comunidad emprendedora que
+            desea y necesita preocuparse por el mañana. Queremos ayudarles a
+            obtener todo lo necesario para que los residuos reciclables
+            puedan transformarse en algo mejor para la comunidad, con el fin
+            de fomentar la economía circular que estos residuos podrían
+            generar."
+                />
+              </Typography>
+            </Grid>
+            <Grid item xs={12} container style={{ margin: "10px 0px" }}>
+              <Grid item xs={3}>
+                <Image
+                  src="/escuelas/img5.png"
+                  width={isLaptop ? 80 : 100}
+                  height={isLaptop ? 65 : 80}
+                />
+              </Grid>
+              <Grid item xs={3}>
+                <Image
+                  src="/escuelas/img6.png"
+                  width={isLaptop ? 80 : 100}
+                  height={isLaptop ? 65 : 80}
+                />
+              </Grid>
+              <Grid item xs={3}>
+                <Image
+                  src="/escuelas/img7.png"
+                  width={isLaptop ? 80 : 100}
+                  height={isLaptop ? 65 : 80}
+                />
+              </Grid>
+              <Grid item xs={3}>
+                <Image
+                  src="/escuelas/img8.png"
+                  width={isLaptop ? 80 : 100}
+                  height={isLaptop ? 65 : 80}
+                />
+              </Grid>
+            </Grid>
           </Grid>
         </Grid>
       </Grid>
@@ -263,7 +379,7 @@ const Proyectos = () => {
         className="map_grid fadeOut"
       >
         <Image
-          src="/mapa.jpg"
+          src="/mapa3.jpg"
           width={500}
           height={350}
           className="map_container"

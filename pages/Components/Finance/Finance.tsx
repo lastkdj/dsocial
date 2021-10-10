@@ -3,7 +3,6 @@ import { Grid, Typography } from "@material-ui/core";
 import Image from "next/image";
 import { useMediaQuery } from "react-responsive";
 import Dialog from "@mui/material/Dialog";
-import ImageList from "./ImageLIst";
 import { FormattedMessage } from "react-intl";
 
 export interface SimpleDialogProps {
@@ -100,9 +99,7 @@ const Finance = () => {
           xs={12}
           className="fin_image"
           justifyContent="center"
-        >
-          <ImageList />
-        </Grid>
+        ></Grid>
       </Grid>
       <Grid
         container

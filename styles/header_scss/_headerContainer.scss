@@ -27,9 +27,17 @@ $xlBreakpoint: 1920px;
   // border-bottom: 2px #3b3f49 solid;
 }
 
+.lenguaje {
+  order: 2;
+}
+
 @media (max-width: $mdBreakpoint) {
   .container {
     justify-content: space-around;
+  }
+
+  .lenguaje {
+    order: 1;
   }
 
   .sticky {

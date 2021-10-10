@@ -56,25 +56,25 @@ const Header: React.FC<Props> = () => {
         >
           {scrolled ? (
             <Image
-              src="/logo.png"
+              src="/logo3.png"
               alt=""
               className="logo"
-              width="120px"
+              width="90px"
               height="40px"
             />
           ) : (
             <Image
-              src="/logo.png"
+              src="/logo3.png"
               alt=""
               className="logo"
-              width="180px"
-              height="60px"
+              width="130px"
+              height="70px"
             />
           )}{" "}
         </Link>
       </Grid>
       {isTabletOrMobile ? (
-        <Grid container item xs={6} sm={6} md={6} className="header_menu">
+        <Grid container item xs={2} className="header_menu">
           <Menu />
         </Grid>
       ) : (
@@ -156,10 +156,12 @@ const Header: React.FC<Props> = () => {
       <Grid
         container
         item
-        xs={1}
+        xs={4}
+        md={1}
         style={{ margin: "0px 10px" }}
         justifyContent="center"
         alignItems="center"
+        className="lenguaje"
       >
         <Grid
           style={{ margin: "0px, 10px", cursor: "pointer" }}
