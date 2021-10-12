@@ -322,15 +322,8 @@ const Proyectos = () => {
             <Grid item xs={12}>
               <Typography className="proy_text">
                 <FormattedMessage
-                  id="projects.descripcionUno"
-                  defaultMessage="El campamento las Totoras nos acogido junto a su dirigenta
-            Viviana, que nos ayudo a visualizar la poca preocupación por los
-            desechos en este campamento. Es una comunidad emprendedora que
-            desea y necesita preocuparse por el mañana. Queremos ayudarles a
-            obtener todo lo necesario para que los residuos reciclables
-            puedan transformarse en algo mejor para la comunidad, con el fin
-            de fomentar la economía circular que estos residuos podrían
-            generar."
+                  id="projects.descripcionTres"
+                  defaultMessage="Con el propósito de llegar a más niños, niñas y adolescentes, trabajaremos junto a la Escuela Territorio Antártico de San Miguel para lograr el mejoramiento de ciertos espacios comunes. La idea es trabajar estos espacios con la transformación de neumáticos en desuso."
                 />
               </Typography>
             </Grid>
