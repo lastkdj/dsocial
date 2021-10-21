@@ -1,18 +1,20 @@
 @import "./voluntarioText";
 
 .voluntario_container {
-  background-image: url("../..//public/landscape2.jpg");
+  background-image: url("../..//public/DSHbackground.jpg");
   padding: 146px 0px;
-  background-position: center;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
   height: 100vh;
 }
 
 .in-kind_container {
-  background-image: url("../..//public/landscape3.jpg");
+  background-image: url("../..//public/DSHbackground.jpg");
   padding: 146px 0px;
-  background-position: center;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
   height: 100vh;
 }
 

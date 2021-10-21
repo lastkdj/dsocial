@@ -30,7 +30,6 @@ $minLaptop: 1280px;
 }
 
 .bio_container {
-  justify-content: flex-end;
 }
 
 .bio_tittle {
@@ -79,13 +78,6 @@ $minLaptop: 1280px;
   font-family: "Montserrat", sans-serif;
   @include marginTopBottom;
   @include fadeInBotAnimation;
-}
-
-@media (min-width: 1280px) {
-  .bio_container {
-    margin-bottom: 200px;
-    margin-right: 200px;
-  }
 }
 
 @media (max-width: 1279px) {

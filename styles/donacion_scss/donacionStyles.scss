@@ -1,11 +1,12 @@
 @import "./donacionText";
 
 .donacion_container {
-  background-image: url("../../public/donacion\ wall.jpg");
   padding-top: 76px;
   height: 100vh;
-  background-position: center;
-  background-size: cover;
+  background-image: url("../..//public/DSHbackground.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .donacion_grid {

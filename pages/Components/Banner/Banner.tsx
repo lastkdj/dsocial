@@ -5,6 +5,7 @@ import Empresa from "./Empresa";
 import Link from "next/link";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import { FormattedMessage } from "react-intl";
+import Image from "next/image";
 
 export interface Props {}
 
@@ -21,12 +22,21 @@ const Banner: React.FC<Props> = () => {
         item
         xs={12}
         sm={10}
-        md={6}
-        lg={5}
+        md={8}
+        lg={7}
         xl={4}
         direction="column"
-        className="bio_container"
+        justifyContent="center"
       >
+        <Grid item container justifyContent="center">
+          <Image
+            src="/logo3.png"
+            alt=""
+            className="logo"
+            width="550px"
+            height="300px"
+          />
+        </Grid>
         <Grid container className="banner_text">
           <Typography
             className="bio_tittle"
@@ -85,14 +95,6 @@ const Banner: React.FC<Props> = () => {
           </Link>{" "}
         </Grid>
       </Grid>
-      <Grid
-        container
-        alignItems="flex-end"
-        justifyContent="flex-end"
-        item
-        xs={4}
-        className="avatar_container"
-      ></Grid>
     </Grid>
   );
 };

@@ -284,7 +284,14 @@ const Donacion = () => {
                   required
                 />
               </Grid>
-              <Grid item xs={12} container justifyContent="center">
+              <Grid
+                item
+                xs={12}
+                lg={10}
+                xl={12}
+                container
+                justifyContent="center"
+              >
                 <Button
                   variant="contained"
                   className="voluntario_button_banner"
@@ -294,7 +301,14 @@ const Donacion = () => {
                 </Button>
               </Grid>
               <Link href="/">
-                <Grid item xs={12} container justifyContent="center">
+                <Grid
+                  item
+                  xs={12}
+                  lg={10}
+                  xl={12}
+                  container
+                  justifyContent="center"
+                >
                   <Button
                     variant="contained"
                     className="dona_button_banner_back"
