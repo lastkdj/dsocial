@@ -2,6 +2,7 @@ import { Grid, Typography } from "@material-ui/core";
 import Button from "@material-ui/core/Button";
 import Link from "next/link";
 import Image from "next/image";
+import { FormattedMessage } from "react-intl";
 
 const Donacion = () => {
   return (
@@ -24,7 +25,10 @@ const Donacion = () => {
               style={{ margin: "50px 0px" }}
             >
               <Typography className="donacion_tittle">
-                DATOS DE TRANSFERENCIA
+                <FormattedMessage
+                  id="donacion.transferencia"
+                  defaultMessage="DATOS DE TRANSFERENCIA"
+                />
               </Typography>
             </Grid>
 
@@ -101,7 +105,10 @@ const Donacion = () => {
             <Link href="/">
               <Grid item xs={12} container justifyContent="center">
                 <Button variant="contained" className="dona_button_banner_back">
-                  Regresar
+                  <FormattedMessage
+                    id="donacion.regresar"
+                    defaultMessage="Regresar"
+                  />
                 </Button>
               </Grid>
             </Link>

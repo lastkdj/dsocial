@@ -4,6 +4,7 @@ import { StylesProvider } from "@material-ui/core/styles";
 import { createTheme } from "@material-ui/core/styles";
 import { ThemeProvider } from "@material-ui/styles";
 import { LangProvider } from "../Components/Context/langContext";
+import Layout from "./Layout/Layout";
 
 const theme = createTheme({
   typography: {
@@ -23,7 +24,9 @@ function MyApp({ Component, pageProps }: AppProps) {
     <ThemeProvider theme={theme}>
       <StylesProvider injectFirst={true}>
         <LangProvider>
-          <Component {...pageProps} />
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
         </LangProvider>
       </StylesProvider>
     </ThemeProvider>

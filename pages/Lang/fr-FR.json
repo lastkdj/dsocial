@@ -84,5 +84,35 @@
   "contact.boton": "Envoyer",
   "contact.contact": "contacto@dshchile.org",
 
-  "voluntario.titulo": "FORMULAIRE DE BÉNÉVOLAT"
+  "voluntario.titulo": "FORMULAIRE DE BÉNÉVOLAT",
+  "voluntario.enviar": "ENVOYER",
+  "voluntario.regresar": "RETOUR",
+  "voluntario.nombre": "Nom complet",
+  "voluntario.contacto": "Numéro de contact",
+  "voluntario.email": "Email",
+  "voluntario.tipo": "Type de volontariat",
+  "voluntario.site": "Assistance sur le terrain",
+  "voluntario.online": "Assistance en ligne",
+  "voluntario.tiempo": "Temps disponible",
+  "voluntario.tiempo1": "Punctuel",
+  "voluntario.tiempo2": "1 demi-journée par mois",
+  "voluntario.tiempo3": "Plus",
+  "voluntario.proyecto": "Sélectionnez le projet",
+  "voluntario.fecha": "Depuis quand",
+
+  "donacion.transferencia": "TRANSFERT DES DONNÉES",
+  "donation.regresar": "RETOUR",
+
+  "empresas.titulo": "FORMULAIRE DE SOUTIEN INSTITUTIONNEL EN NATURE",
+  "empresas.nombre": "Nom de la société",
+  "empresas.persona": "Nom de la personne",
+  "empresas.contacto": "Numéro de contact",
+  "empresas.email": "Email",
+  "empresas.tipo": "Type de soutien en nature",
+  "empresas.matériel": "Matériel",
+  "empresas.servicio": "Service",
+  "empresas.proyecto": "Sélectionnez le projet",
+  "empresas.fecha": "Depuis quand",
+  "empresas.enviar": "ENVOYER",
+  "empresas.regresar": "RETOUR"
 }

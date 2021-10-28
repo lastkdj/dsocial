@@ -9,6 +9,7 @@ import { FormControl, InputLabel, TextField } from "@mui/material/";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
 import emailjs from "emailjs-com";
+import { FormattedMessage } from "react-intl";
 
 const Empresas = () => {
   const [tipo, setTipo] = React.useState("");
@@ -106,7 +107,10 @@ const Empresas = () => {
               className="donacion_tittle"
               style={{ textAlign: "center", padding: "20px" }}
             >
-              FORMULARIO DE APOYO INSTITUCIONAL IN KIND
+              <FormattedMessage
+                id="empresas.titulo"
+                defaultMessage="FORMULARIO DE APOYO INSTITUCIONAL IN KIND"
+              />
             </Typography>
           </Grid>
           <Grid
@@ -131,7 +135,12 @@ const Empresas = () => {
               >
                 <TextField
                   id="outlined-basic"
-                  label="Nombre Empresa"
+                  label={
+                    <FormattedMessage
+                      id="empresas.nombre"
+                      defaultMessage="Nombre Empresa"
+                    />
+                  }
                   variant="outlined"
                   fullWidth={true}
                   name="from_empresa"
@@ -149,7 +158,12 @@ const Empresas = () => {
               >
                 <TextField
                   id="outlined-basic"
-                  label="Nombre Persona"
+                  label={
+                    <FormattedMessage
+                      id="empresas.persona"
+                      defaultMessage="Nombre Persona"
+                    />
+                  }
                   variant="outlined"
                   fullWidth={true}
                   name="from_name"
@@ -166,7 +180,12 @@ const Empresas = () => {
               >
                 <TextField
                   id="outlined-basic"
-                  label="Numero de Contacto"
+                  label={
+                    <FormattedMessage
+                      id="empresas.contacto"
+                      defaultMessage="Numero de Contacto"
+                    />
+                  }
                   variant="outlined"
                   name="from_number"
                   fullWidth={true}
@@ -200,7 +219,12 @@ const Empresas = () => {
               >
                 <FormControl fullWidth>
                   <InputLabel id="demo-simple-select-label">
-                    Tipo de apoyo In Kind
+                    {
+                      <FormattedMessage
+                        id="empresas.tipo"
+                        defaultMessage="Tipo de apoyo In Kind"
+                      />
+                    }
                   </InputLabel>
                   <Select
                     labelId="demo-simple-select-label"
@@ -211,8 +235,22 @@ const Empresas = () => {
                     name="from_apoyo"
                     required
                   >
-                    <MenuItem value={"Material"}>Material</MenuItem>
-                    <MenuItem value={"Servicio"}>Servicio</MenuItem>
+                    <MenuItem value={"Material"}>
+                      {
+                        <FormattedMessage
+                          id="empresas.material"
+                          defaultMessage="Material"
+                        />
+                      }
+                    </MenuItem>
+                    <MenuItem value={"Servicio"}>
+                      {
+                        <FormattedMessage
+                          id="empresas.servicio"
+                          defaultMessage="Servicio"
+                        />
+                      }
+                    </MenuItem>
                   </Select>
                 </FormControl>
               </Grid>
@@ -226,7 +264,12 @@ const Empresas = () => {
               >
                 <FormControl fullWidth>
                   <InputLabel id="demo-simple-select-label">
-                    Selecciona el Proyecto{" "}
+                    {
+                      <FormattedMessage
+                        id="empresas.proyecto"
+                        defaultMessage="Selecciona el Proyecto"
+                      />
+                    }
                   </InputLabel>
                   <Select
                     labelId="demo-simple-select-label"
@@ -255,7 +298,12 @@ const Empresas = () => {
               >
                 <TextField
                   id="outlined-basic"
-                  label="Desde Cuando"
+                  label={
+                    <FormattedMessage
+                      id="empresas.fecha"
+                      defaultMessage="Desde Cuando"
+                    />
+                  }
                   variant="outlined"
                   fullWidth={true}
                   name="from_date"
@@ -268,7 +316,12 @@ const Empresas = () => {
                   className="voluntario_button_banner"
                   type="submit"
                 >
-                  Enviar
+                  {
+                    <FormattedMessage
+                      id="empresas.enviar"
+                      defaultMessage="ENVIAR"
+                    />
+                  }
                 </Button>
               </Grid>
               <Link href="/">
@@ -277,7 +330,10 @@ const Empresas = () => {
                     variant="contained"
                     className="dona_button_banner_back"
                   >
-                    Regresar
+                    <FormattedMessage
+                      id="empresas.regresar"
+                      defaultMessage="REGRESAR"
+                    />
                   </Button>
                 </Grid>
               </Link>

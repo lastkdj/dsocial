@@ -5,13 +5,7 @@ import Link from "next/link";
 import { Result } from "antd";
 import "antd/dist/antd.css";
 import Snackbar from "@mui/material/Snackbar";
-import {
-  FormControl,
-  InputLabel,
-  Input,
-  FormHelperText,
-  TextField,
-} from "@mui/material/";
+import { FormControl, InputLabel, TextField } from "@mui/material/";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
 import emailjs from "emailjs-com";
@@ -138,7 +132,12 @@ const Donacion = () => {
               >
                 <TextField
                   id="outlined-basic"
-                  label="Nombre Completo"
+                  label={
+                    <FormattedMessage
+                      id="voluntario.nombre"
+                      defaultMessage="Nombre Completo"
+                    />
+                  }
                   variant="outlined"
                   fullWidth={true}
                   name="from_name"
@@ -155,7 +154,12 @@ const Donacion = () => {
               >
                 <TextField
                   id="outlined-basic"
-                  label="Numero de Contacto"
+                  label={
+                    <FormattedMessage
+                      id="voluntario.contacto"
+                      defaultMessage="Numero de contacto"
+                    />
+                  }
                   variant="outlined"
                   name="from_number"
                   fullWidth={true}
@@ -173,7 +177,12 @@ const Donacion = () => {
               >
                 <TextField
                   id="outlined-basic"
-                  label="Email"
+                  label={
+                    <FormattedMessage
+                      id="voluntario.email"
+                      defaultMessage="Email"
+                    />
+                  }
                   variant="outlined"
                   name="from_email"
                   type="email"
@@ -191,21 +200,38 @@ const Donacion = () => {
               >
                 <FormControl fullWidth>
                   <InputLabel id="demo-simple-select-label">
-                    Tipo de Voluntariado
+                    <FormattedMessage
+                      id="voluntario.tipo"
+                      defaultMessage="Tipo de Voluntariado"
+                    />
                   </InputLabel>
                   <Select
                     labelId="demo-simple-select-label"
                     id="demo-simple-select"
                     value={tipo}
-                    label="Tipo de Voluntariado"
+                    label={
+                      <FormattedMessage
+                        id="voluntario.tipo"
+                        defaultMessage="Tipo de Voluntariado"
+                      />
+                    }
                     onChange={handleChange}
                     name="from_voluntario"
                     required
                   >
                     <MenuItem value={"Apoyo en Terreno"}>
-                      Apoyo en Terreno
+                      <FormattedMessage
+                        id="voluntario.site"
+                        defaultMessage="Apoyo en Terreno"
+                      />
                     </MenuItem>
-                    <MenuItem value={"Apoyo Online"}>Apoyo Online</MenuItem>
+                    <MenuItem value={"Apoyo Online"}>
+                      {" "}
+                      <FormattedMessage
+                        id="voluntario.online"
+                        defaultMessage="Apoyo Online"
+                      />
+                    </MenuItem>
                   </Select>
                 </FormControl>
               </Grid>
@@ -219,22 +245,43 @@ const Donacion = () => {
               >
                 <FormControl fullWidth>
                   <InputLabel id="demo-simple-select-label">
-                    Tiempo disponible
+                    <FormattedMessage
+                      id="voluntario.tiempo"
+                      defaultMessage="Tiempo disponible"
+                    />
                   </InputLabel>
                   <Select
                     labelId="demo-simple-select-label"
                     id="demo-simple-select"
                     value={time}
-                    label="   Tiempo disponible"
+                    label={
+                      <FormattedMessage
+                        id="voluntario.tiempo"
+                        defaultMessage="Tiempo disponible"
+                      />
+                    }
                     onChange={handleChangeTime}
                     name="from_time"
                     required
                   >
-                    <MenuItem value={"Punctual"}>Punctual</MenuItem>
-                    <MenuItem value={"1 Medio dia por Mes"}>
-                      1 Medio dia por Mes
+                    <MenuItem value={"Punctual"}>
+                      <FormattedMessage
+                        id="voluntario.tiempo1"
+                        defaultMessage="Punctual"
+                      />
                     </MenuItem>
-                    <MenuItem value={"Mas"}>Mas</MenuItem>
+                    <MenuItem value={"1 Medio dia por Mes"}>
+                      <FormattedMessage
+                        id="voluntario.tiempo2"
+                        defaultMessage="1 Medio dia por Mes"
+                      />
+                    </MenuItem>
+                    <MenuItem value={"Mas"}>
+                      <FormattedMessage
+                        id="voluntario.tiempo3"
+                        defaultMessage="Mas"
+                      />
+                    </MenuItem>
                   </Select>
                 </FormControl>
               </Grid>
@@ -248,13 +295,21 @@ const Donacion = () => {
               >
                 <FormControl fullWidth>
                   <InputLabel id="demo-simple-select-label">
-                    Selecciona el Proyecto{" "}
+                    <FormattedMessage
+                      id="voluntario.proyecto"
+                      defaultMessage="Selecciona el Proyecto"
+                    />
                   </InputLabel>
                   <Select
                     labelId="demo-simple-select-label"
                     id="demo-simple-select"
                     value={project}
-                    label="Selecciona el Proyecto"
+                    label={
+                      <FormattedMessage
+                        id="voluntario.proyecto"
+                        defaultMessage="Selecciona el Proyecto"
+                      />
+                    }
                     onChange={handleChangeProject}
                     name="from_project"
                     required
@@ -277,7 +332,12 @@ const Donacion = () => {
               >
                 <TextField
                   id="outlined-basic"
-                  label="Desde Cuando"
+                  label={
+                    <FormattedMessage
+                      id="voluntario.fecha"
+                      defaultMessage="Desde cuando"
+                    />
+                  }
                   variant="outlined"
                   fullWidth={true}
                   name="from_date"
@@ -297,7 +357,10 @@ const Donacion = () => {
                   className="voluntario_button_banner"
                   type="submit"
                 >
-                  Enviar
+                  <FormattedMessage
+                    id="voluntario.enviar"
+                    defaultMessage="Enviar"
+                  />
                 </Button>
               </Grid>
               <Link href="/">
@@ -313,7 +376,10 @@ const Donacion = () => {
                     variant="contained"
                     className="dona_button_banner_back"
                   >
-                    Regresar
+                    <FormattedMessage
+                      id="voluntario.regresar"
+                      defaultMessage="Regresar"
+                    />
                   </Button>
                 </Grid>
               </Link>

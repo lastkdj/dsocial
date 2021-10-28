@@ -84,5 +84,35 @@
   "contact.boton": "Enviar",
   "contact.contact": "contacto@dshchile.org",
 
-  "voluntario.titulo": "FORMULARIO DE VOLUNTARIADO"
+  "voluntario.titulo": "FORMULARIO DE VOLUNTARIADO",
+  "voluntario.enviar": "ENVIAR",
+  "voluntario.regresar": "REGRESAR",
+  "voluntario.nombre": "Nombre Completo",
+  "voluntario.contacto": "Numero de Contacto",
+  "voluntario.email": "Email",
+  "voluntario.tipo": "Tipo de Voluntariado",
+  "voluntario.site": "Apoyo en Terreno",
+  "voluntario.online": "Apoyo Online",
+  "voluntario.tiempo": "Tiempo disponible",
+  "voluntario.tiempo1": "Punctual",
+  "voluntario.tiempo2": "1 Medio dia por Mes",
+  "voluntario.tiempo3": "Mas",
+  "voluntario.proyecto": "Selecciona el Proyecto",
+  "voluntario.fecha": "Desde Cuando",
+
+  "donacion.transferencia": "DATOS DE TRANSFERENCIA",
+  "donacion.regresar": "REGRESAR",
+
+  "empresas.titulo": "FORMULARIO DE APOYO INSTITUCIONAL IN KIND",
+  "empresas.nombre": "Nombre Empresa",
+  "empresas.persona": "Nombre Persona",
+  "empresas.contacto": "Numero de Contacto",
+  "empresas.email": "Email",
+  "empresas.tipo": "Tipo de apoyo in Kind",
+  "empresas.material": "Material",
+  "empresas.servicio": "Servicio",
+  "empresas.proyecto": "Selecciona el Proyecto",
+  "empresas.fecha": "Desde Cuando",
+  "empresas.enviar": "ENVIAR",
+  "empresas.regresar": "REGRESAR"
 }

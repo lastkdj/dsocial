@@ -84,5 +84,35 @@
   "contact.boton": "Send",
   "contact.contact": "contacto@dshchile.org",
 
-  "voluntario.titulo": "VOLUNTEER FORM"
+  "voluntario.titulo": "VOLUNTEER FORM",
+  "voluntario.enviar": "SEND",
+  "voluntario.regresar": "BACK",
+  "voluntario.nombre": "Full Name",
+  "voluntario.contacto": "Contact Number",
+  "voluntario.email": "Email",
+  "voluntario.tipo": "Type of Volunteering",
+  "voluntario.site": "Field Support",
+  "voluntario.online": "Online Support",
+  "voluntario.tiempo": "Time available",
+  "voluntario.tiempo1": "Punctual",
+  "voluntario.tiempo2": "1 Half day per month",
+  "voluntario.tiempo3": "More",
+  "voluntario.proyecto": "Select the Project",
+  "voluntario.fecha": "Since when",
+
+  "donacion.transferencia": "TRANSFER DATA",
+  "donacion.regresar": "BACK",
+
+  "empresas.titulo": "INSTITUTIONAL SUPPORT FORM IN KIND",
+  "empresas.nombre": "Company Name",
+  "empresas.persona": "Person Name",
+  "empresas.contacto": "Contact Number",
+  "empresas.email": "Email",
+  "empresas.tipo": "Type of support in Kind",
+  "empresas.material": "Material",
+  "empresas.servicio": "Service",
+  "empresas.proyecto": "Select the Project",
+  "empresas.fecha": "Since When",
+  "empresas.enviar": "SEND",
+  "empresas.regresar": "BACK"
 }
