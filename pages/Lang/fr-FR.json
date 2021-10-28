@@ -101,7 +101,7 @@
   "voluntario.fecha": "Depuis quand",
 
   "donacion.transferencia": "TRANSFERT DES DONNÉES",
-  "donation.regresar": "RETOUR",
+  "donacion.regresar": "RETOUR",
 
   "empresas.titulo": "FORMULAIRE DE SOUTIEN INSTITUTIONNEL EN NATURE",
   "empresas.nombre": "Nom de la société",
@@ -109,7 +109,7 @@
   "empresas.contacto": "Numéro de contact",
   "empresas.email": "Email",
   "empresas.tipo": "Type de soutien en nature",
-  "empresas.matériel": "Matériel",
+  "empresas.material": "Matériel",
   "empresas.servicio": "Service",
   "empresas.proyecto": "Sélectionnez le projet",
   "empresas.fecha": "Depuis quand",
