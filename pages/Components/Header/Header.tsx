@@ -54,27 +54,11 @@ const Header: React.FC<Props> = () => {
           offset={-66}
           duration={1000}
         >
-          {scrolled ? (
-            <Image
-              src="/logo3.png"
-              alt=""
-              className="logo"
-              width="90px"
-              height="40px"
-            />
-          ) : (
-            <Image
-              src="/logo3.png"
-              alt=""
-              className="logo"
-              width="130px"
-              height="70px"
-            />
-          )}{" "}
+          <Image src="/logo3.png" alt="" width="100px" height="50px" />
         </Link>
       </Grid>
       {isTabletOrMobile ? (
-        <Grid container item xs={2} className="header_menu">
+        <Grid container item xs={1} className="header_menu">
           <Menu />
         </Grid>
       ) : (
@@ -158,7 +142,6 @@ const Header: React.FC<Props> = () => {
         item
         xs={4}
         md={1}
-        style={{ margin: "0px 10px" }}
         justifyContent="center"
         alignItems="center"
         className="lenguaje"

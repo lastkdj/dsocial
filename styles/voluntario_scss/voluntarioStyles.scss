@@ -1,7 +1,7 @@
 @import "./voluntarioText";
 
 .voluntario_container {
-  background-image: url("../..//public/DSHbackground.jpg");
+  background-image: url("../..//public/formbackgroundblack.jpg");
   padding: 146px 0px;
   background-size: contain;
   background-repeat: no-repeat;
@@ -10,9 +10,9 @@
 }
 
 .in-kind_container {
-  background-image: url("../..//public/DSHbackground.jpg");
+  background-image: url("../..//public/formbackgroundblack.jpg");
   padding: 146px 0px;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
   height: 100vh;
@@ -68,6 +68,10 @@
 }
 
 @media (max-width: 1366px) {
+  .in-kind_container {
+    height: auto;
+  }
+
   .voluntario_input {
     margin: 10px 10px;
   }

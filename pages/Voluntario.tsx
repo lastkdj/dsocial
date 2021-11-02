@@ -83,7 +83,7 @@ const Donacion = () => {
             >
               Nuevo Voluntario
             </Button>
-            ,
+
             <Link href="/">
               <Grid item xs={12} container justifyContent="center">
                 <Button variant="contained" className="dona_button_banner_back">
@@ -92,7 +92,6 @@ const Donacion = () => {
               </Grid>
             </Link>
           </Grid>
-          ,
         </Grid>
       ) : (
         <Grid container justifyContent="center" className="fade_in_success">
@@ -164,7 +163,6 @@ const Donacion = () => {
                   name="from_number"
                   fullWidth={true}
                   required
-                  type="number"
                 />
               </Grid>
               <Grid

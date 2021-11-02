@@ -83,7 +83,7 @@ const Empresas = () => {
             >
               Nuevo Apoyo In Kind
             </Button>
-            ,
+
             <Link href="/">
               <Grid item xs={12} container justifyContent="center">
                 <Button variant="contained" className="dona_button_banner_back">
@@ -92,7 +92,6 @@ const Empresas = () => {
               </Grid>
             </Link>
           </Grid>
-          ,
         </Grid>
       ) : (
         <Grid container justifyContent="center" className="fade_in_success">
@@ -310,7 +309,7 @@ const Empresas = () => {
                   required
                 />
               </Grid>
-              <Grid item xs={12} container justifyContent="center">
+              <Grid item lg={10} xs={12} container justifyContent="center">
                 <Button
                   variant="contained"
                   className="voluntario_button_banner"
@@ -325,7 +324,7 @@ const Empresas = () => {
                 </Button>
               </Grid>
               <Link href="/">
-                <Grid item xs={12} container justifyContent="center">
+                <Grid item lg={10} xs={12} container justifyContent="center">
                   <Button
                     variant="contained"
                     className="dona_button_banner_back"
